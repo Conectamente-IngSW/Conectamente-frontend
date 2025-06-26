@@ -6,10 +6,17 @@ export const routes: Routes = [
     {
         path: 'auth',
         loadChildren: () => import('./pages/auth/auth.routes').then(m => m.authRoutes)
+
+    },
+    {
+        path: 'paciente',
+        loadChildren: () => import('./pages/paciente/paciente.routes').then(m => m.pacienteRoutes)
     },
     {
         path: '',
-        redirectTo: 'auth/login',
+        //redirectTo: 'auth/login',
+        //redirectTo: 'paciente/mi_cuenta/configuracion',
+        redirectTo: 'paciente/mi_cuenta/visualizar-cita',
         pathMatch: 'full'
     }
 ];
