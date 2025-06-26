@@ -351,13 +351,12 @@
 }
 
 .btn_trabaja:active {
-  background-color: #3aa6a8; /* color más oscuro al hacer clic */
+  background-color: #3aa6a9; /* color más oscuro al hacer clic */
 }
 
 .signup_button:active {
   background-color: #62b2b1;
 }
-
 
 .signup_button {
   width: 170px;
@@ -402,7 +401,7 @@
   height: 1118px;
   position: relative;
   overflow: hidden;
-  background-color: #9dccff96;
+  background-color: #EBF5FF;
 }
 
 .frame-61variant3:hover,
