@@ -466,3 +466,9 @@
   background: #EBF5FF;
   overflow: hidden;
 }
+
+.configuracin-de-la-cuenta_01 {
+  text-decoration: none; /* quita el subrayado */
+  color: inherit;         /* hereda el color del contenedor/padre */
+  cursor: pointer;        /* mantiene el cursor de "clickeable" */
+}
