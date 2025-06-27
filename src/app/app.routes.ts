@@ -17,7 +17,8 @@ export const routes: Routes = [
         //redirectTo: 'auth/login',
         //redirectTo: 'paciente/mi_cuenta/configuracion',
         //redirectTo: 'paciente/mi_cuenta/visualizar-cita',
-        redirectTo: 'paciente/pantalla_principal/visualizar-psicologo',
+        //redirectTo: 'paciente/pantalla_principal/visualizar-psicologo',
+        redirectTo: 'paciente/perfil_psicologo/perfil',
         pathMatch: 'full'
     }
 ];
