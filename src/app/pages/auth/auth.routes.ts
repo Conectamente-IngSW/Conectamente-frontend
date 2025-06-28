@@ -11,9 +11,11 @@ export const authRoutes: Routes = [
     component: AuthLayoutComponent,
     children: [
       { path: 'login', component: LoginComponent },
+      { path: 'register', component: SelectRegisterComponent },         // ✅ ESTA LÍNEA
       { path: 'register/paciente', component: RegisterPacienteComponent },
       { path: 'register/psicologo', component: RegisterPsicologoComponent },
       { path: '', redirectTo: 'login', pathMatch: 'full' }
-    ]
+]
+
   }
 ];

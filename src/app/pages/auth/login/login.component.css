@@ -411,6 +411,7 @@
   line-height: 18.4px;
   text-decoration: underline;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .login .img {
