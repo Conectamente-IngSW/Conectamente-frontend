@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router'; // ✅ IMPORTACIÓN NECESARIA
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule],
+  standalone: true,
+  imports: [RouterOutlet], // ✅ AÑADIDO AQUÍ TAMBIÉN
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'conectamente';
+  title = 'conectamente-frontend';
 }
