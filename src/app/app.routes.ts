@@ -13,6 +13,10 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/paciente/paciente.routes').then(m => m.pacienteRoutes)
     },
     {
+        path: 'landing',
+        //loadChildren: () => import('./pages/landing/landing.routes').then(m => m.landingRoutes)
+    },
+    {
         path: '',
         //redirectTo: 'auth/login',
         //redirectTo: 'paciente/mi_cuenta/configuracion',
