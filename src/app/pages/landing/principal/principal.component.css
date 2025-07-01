@@ -129,8 +129,8 @@
   width: 1924px;
   height: 4404px;
   left: 0px;
-  top: 952px;
-  position: absolute;
+  top: 0px;
+  position: relative;
 }
 
 .quesconectamente_span_01 {
@@ -897,7 +897,7 @@
   left: 625px;
   top: 376px;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .male-user_01 {
@@ -976,7 +976,7 @@
   left: 915px;
   top: 687px;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .rectangle-19 {
@@ -996,7 +996,7 @@
   font-family: Poppins;
   font-weight: 400;
   word-wrap: break-word;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .historial {
@@ -1013,7 +1013,7 @@
   font-family: Poppins;
   font-weight: 400;
   word-wrap: break-word;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .accede-al-registro-completo-de-tus-sesiones-y-pagos-para-tener-todo-bajo-control {
@@ -1031,7 +1031,7 @@
   left: 1425px;
   top: 687px;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .chat {
@@ -1040,7 +1040,7 @@
   left: 652px;
   top: 1106px;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .push-notifications {
@@ -1049,7 +1049,7 @@
   left: 1178px;
   top: 1106px;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
 }
 
 .rectangle-17 {
@@ -1104,7 +1104,6 @@
   left: 405px;
   top: 687px;
   position: absolute;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .perfilespersonalizados_span {
@@ -1129,7 +1128,6 @@
   font-family: Poppins;
   font-weight: 400;
   word-wrap: break-word;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .crea-un-perfil-nico-para-mostrar-tu-experiencia-y-necesidades-adaptado-a-tus-preferencias {
@@ -1235,7 +1233,7 @@
 }
 
 .funcionalidades_01 {
-  width: 100%;
+  width: 1920px;
   height: 1553px;
   left: 0px;
   top: 1983px;
@@ -1245,10 +1243,8 @@
 }
 
 .frame-427318920 {
-  width: 100%;
+  width: 1920px;
   height: 953px;
-  left: 0px;
-  top: 0px;
   position: absolute;
   background: #49BBBD;
   overflow: hidden;
@@ -1256,7 +1252,7 @@
 
 .frame-427318925 {
   width: 1906px;
-  height: 5311px;
+  height: 5330px;
   left: 0px;
   top: -4533px;
   position: absolute;
@@ -1274,7 +1270,7 @@
 }
 
 .frame-427318927 {
-  width: 100%;
+  width: 1920px;
   height: 5357px;
   position: relative;
   background: white;

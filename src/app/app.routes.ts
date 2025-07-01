@@ -23,7 +23,7 @@ export const routes: Routes = [
         //redirectTo: 'paciente/mi_cuenta/visualizar-cita',
         //redirectTo: 'paciente/pantalla_principal/visualizar-psicologo',
         //redirectTo: 'paciente/perfil_psicologo/perfil',
-        redirectTo: 'landing/principal',
+        redirectTo: 'landing/precios',
         pathMatch: 'full'
     }
 ];
