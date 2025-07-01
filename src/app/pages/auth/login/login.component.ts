@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // ← Importante para usar ngModel
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
@@ -16,11 +16,6 @@ export class LoginComponent {
   };
 
   login() {
-    console.log(this.loginForm);
-    // Aquí puedes llamar a AuthService para autenticar
+    // lógica de login
   }
 }
-
-
-
-
