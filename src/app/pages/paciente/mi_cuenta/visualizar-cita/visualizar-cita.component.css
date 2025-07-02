@@ -8,13 +8,13 @@
 
 .mi-cuenta {
   left: 119px;
-  top: 46px;
+  top: 63px;
   position: absolute;
   text-align: center;
 }
 
 .rectangle-187 {
-  width: 850px;
+  width: 1084px;
   height: 738px;
   left: -7px;
   top: 0px;
@@ -82,7 +82,7 @@
 .hora-de-cita {
   width: 138.70px;
   height: 36px;
-  left: 550px;
+  left: 714px;
   top: 12px;
   position: absolute;
 }
@@ -98,7 +98,7 @@
 .text-1040-am {
   width: 168px;
   height: 36px;
-  left: 550px;
+  left: 714px;
   top: 42px;
   position: absolute;
 }
@@ -114,7 +114,7 @@
 .fecha-de-cita {
   width: 141.18px;
   height: 36px;
-  left: 300px;
+  left: 423px;
   top: 12px;
   position: absolute;
 }
@@ -130,7 +130,7 @@
 .text-20052025 {
   width: 171px;
   height: 36px;
-  left: 300px;
+  left: 423px;
   top: 42px;
   position: absolute;
 }
@@ -210,7 +210,7 @@
 .fecha-de-cita_01 {
   width: 141.18px;
   height: 36px;
-  left: 300px;
+  left: 423px;
   top: 12px;
   position: absolute;
 }
@@ -226,7 +226,7 @@
 .text-20052025_01 {
   width: 171px;
   height: 36px;
-  left: 300px;
+  left: 423px;
   top: 42px;
   position: absolute;
 }
@@ -242,7 +242,7 @@
 .hora-de-cita_01 {
   width: 138.70px;
   height: 36px;
-  left: 550px;
+  left: 714px;
   top: 12px;
   position: absolute;
 }
@@ -258,7 +258,7 @@
 .text-1040-am_01 {
   width: 168px;
   height: 36px;
-  left: 550px;
+  left: 714px;
   top: 42px;
   position: absolute;
 }
@@ -306,7 +306,7 @@
 .direccin {
   width: 232px;
   height: 36px;
-  left: 300px;
+  left: 380px;
   top: 93px;
   position: absolute;
 }
@@ -322,7 +322,7 @@
 .av-benavides-1034-miraflores {
   width: 321px;
   height: 36px;
-  left: 300px;
+  left: 380px;
   top: 129px;
   position: absolute;
 }
@@ -338,7 +338,7 @@
 }
 
 .miscitas_01_span {
-  color: black;
+  color: #2D36FF;
   font-size: 24px;
   font-family: Poppins;
   font-weight: 400;
@@ -364,7 +364,7 @@
 }
 
 .configuracindelacuenta_01_span {
-  
+  color: #171718;
   font-size: 24px;
   font-family: Poppins;
   font-weight: 400;
@@ -379,12 +379,8 @@
   position: absolute;
 }
 
-.miscitas_01_span{
-    color: #2D36FF;
-}
-
 .frame-427318907 {
-  width: 800px;
+  width: 972px;
   height: 83px;
   left: 0px;
   top: 0px;
@@ -396,7 +392,7 @@
 }
 
 .frame-427318907_01 {
-  width: 800px;
+  width: 972px;
   height: 83px;
   left: 0px;
   top: 0px;
@@ -415,8 +411,8 @@
   position: absolute;
 }
 
-.cita_virtual {
-  width: 750px;
+.frame-427318910 {
+  width: 972px;
   height: 187px;
   left: 49px;
   top: 167px;
@@ -428,8 +424,8 @@
   outline-offset: -1px;
 }
 
-.cita_presencial {
-  width: 750px;
+.frame-427318911 {
+  width: 972px;
   height: 187px;
   left: 49px;
   top: 391px;
@@ -443,32 +439,26 @@
 
 .frame-126 {
   width: 449px;
-  height: 522px;
-  left: 80px;
+  height: 377px;
+  left: 119px;
   top: 182px;
   position: absolute;
   overflow: hidden;
 }
 
-.frame-citas {
-  width: 850px;
+.frame-125 {
+  width: 1085px;
   height: 836px;
-  left: 580px;
+  left: 642px;
   top: 182px;
   position: absolute;
   overflow: hidden;
 }
 
-.frame-pantalla {
-  width: 100%;
+.frame-427318915 {
+  width: 1920px;
   height: 1030px;
   position: relative;
   background: #EBF5FF;
   overflow: hidden;
-}
-
-.configuracin-de-la-cuenta_01 {
-  text-decoration: none; /* quita el subrayado */
-  color: inherit;         /* hereda el color del contenedor/padre */
-  cursor: pointer;        /* mantiene el cursor de "clickeable" */
 }

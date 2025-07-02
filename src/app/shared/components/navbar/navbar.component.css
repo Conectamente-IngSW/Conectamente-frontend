@@ -16,7 +16,7 @@
 }
 
 .mi-cuenta {
-  left: 1300px;
+  left: 1603px;
   top: 66px;
   position: absolute;
 }
@@ -36,15 +36,23 @@
   position: absolute;
 }
 
-.logo {
+.rectangle-1-removebg-preview-1-2 {
   left: 102px;
+  position: absolute;
+}
+
+.frame-427318914 {
+  width: 1920px;
+  height: 1138px;
+  left: 0px;
+  top: 155px;
   position: absolute;
 }
 
 .mensajes {
   width: 36px;
   height: 36px;
-  left: 1200px;
+  left: 1493px;
   top: 61px;
   position: absolute;
   background: #54AFB2;
@@ -53,7 +61,7 @@
 }
 
 .header {
-  width: 100%;
+  width: 1920px;
   height: 161px;
   position: relative;
   overflow: hidden;

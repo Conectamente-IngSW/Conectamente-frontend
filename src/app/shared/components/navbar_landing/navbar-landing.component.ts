@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar-landing',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './navbar-landing.component.html',
   styleUrl: './navbar-landing.component.css'
 })

@@ -1,5 +1,5 @@
 .fondo_vista_paciente {
-  width: 100;
+  width: 1920px;
   height: 326px;
   left: 0px;
   top: 2px;
@@ -192,7 +192,7 @@
 }
 
 .rectangle {
-  width: 100%;
+  width: 1920px;
   height: 1607px;
   left: 0px;
   top: 328px;
@@ -202,7 +202,7 @@
 }
 
 .rectangle_01 {
-  width: 100%;
+  width: 1920px;
   height: 1607px;
   left: 0px;
   top: 328px;
@@ -1110,15 +1110,15 @@
 .atencin-lunes-a-viernes-9-a-m-7-p-m_05 {
   width: 331px;
   height: 30px;
-  left: 90px;
+  left: 101px;
   top: 330px;
   position: absolute;
 }
 
 .psicologo_1 {
-  width: 400px;
+  width: 482px;
   height: 484px;
-  left: 150px;
+  left: 128px;
   top: 1132px;
   position: absolute;
   background: white;
@@ -1128,9 +1128,9 @@
 }
 
 .psicologo_1_01 {
-  width: 400px;
+  width: 482px;
   height: 484px;
-  left: 650px;
+  left: 719px;
   top: 1131px;
   position: absolute;
   background: white;
@@ -1140,9 +1140,9 @@
 }
 
 .psicologo_1_02 {
-  width: 400px;
+  width: 482px;
   height: 484px;
-  left: 1160px;
+  left: 1310px;
   top: 1131px;
   position: absolute;
   background: white;
@@ -1152,9 +1152,9 @@
 }
 
 .psicologo_1_03 {
-  width: 400px;
+  width: 482px;
   height: 484px;
-  left: 150px;
+  left: 128px;
   top: 525px;
   position: absolute;
   background: white;
@@ -1164,9 +1164,9 @@
 }
 
 .psicologo_1_04 {
-  width: 400px;
+  width: 482px;
   height: 484px;
-  left: 650px;
+  left: 719px;
   top: 524px;
   position: absolute;
   background: white;
@@ -1176,9 +1176,9 @@
 }
 
 .psicologo_1_05 {
-  width: 400px;
+  width: 482px;
   height: 484px;
-  left: 1160px;
+  left: 1310px;
   top: 524px;
   position: absolute;
   background: white;
@@ -1188,7 +1188,7 @@
 }
 
 .body_vista_pacientes {
-  width: 100%;
+  width: 1920px;
   height: 1723px;
   position: relative;
   overflow: hidden;

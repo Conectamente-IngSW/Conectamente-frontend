@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+
 import { PrincipalComponent } from './principal/principal.component';   
 import { PreciosComponent } from './precios/precios.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
