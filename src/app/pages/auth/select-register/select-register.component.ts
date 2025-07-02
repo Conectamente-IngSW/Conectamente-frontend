@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router'; // <--- IMPORTANTE
 
 @Component({
   selector: 'app-select-register',
   standalone: true,
   templateUrl: './select-register.component.html',
   styleUrls: ['./select-register.component.css'],
-  imports: [],
+  imports: [RouterModule], // <--- AGREGA ESTO
 })
 export class SelectRegisterComponent {
   constructor(private router: Router) {}
@@ -15,3 +16,4 @@ export class SelectRegisterComponent {
     this.router.navigate([`/register/${tipo}`]);
   }
 }
+
