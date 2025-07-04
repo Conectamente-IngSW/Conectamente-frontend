@@ -1,5 +1,3 @@
-
-
 .micuenta_span {
   color: #2F327D;
   font-size: 54px;
@@ -10,13 +8,13 @@
 
 .mi-cuenta {
   left: 119px;
-  top: 46px;
+  top: 63px;
   position: absolute;
   text-align: center;
 }
 
 .rectangle-187 {
-  width: 850px;
+  width: 1084px;
   height: 832px;
   left: -7px;
   top: 0px;
@@ -278,6 +276,14 @@
   position: absolute;
 }
 
+.frame-427318923 {
+  width: 100px;
+  height: 100px;
+  left: 1717px;
+  top: 781px;
+  position: absolute;
+}
+
 .frame-61variant3 {
   width: 435px;
   height: 54px;
@@ -339,7 +345,7 @@
 }
 
 .btn_trabaja {
-  width: 270px;
+  width: 351px;
   height: 60px;
   left: 44px;
   top: 696px;
@@ -350,18 +356,10 @@
   border-radius: 36px;
 }
 
-.btn_trabaja:active {
-  background-color: #3aa6a9; /* color más oscuro al hacer clic */
-}
-
-.signup_button:active {
-  background-color: #62b2b1;
-}
-
 .signup_button {
-  width: 170px;
+  width: 186px;
   height: 60px;
-  left: 600px;
+  left: 792px;
   top: 696px;
   position: absolute;
   background: #7ECCCD;
@@ -381,7 +379,7 @@
 .frame-125 {
   width: 1085px;
   height: 836px;
-  left: 580px;
+  left: 642px;
   top: 182px;
   position: absolute;
   overflow: hidden;
@@ -390,26 +388,25 @@
 .frame-126 {
   width: 449px;
   height: 377px;
-  left: 80px;
+  left: 119px;
   top: 182px;
   position: absolute;
   overflow: hidden;
 }
 
 .mi_cuenta_contenido {
-  width: 100%;
+  width: 1920px;
   height: 1118px;
-  position: relative;
+  left: 0px;
+  top: 6px;
+  position: absolute;
   overflow: hidden;
-  background-color: #EBF5FF;
 }
 
-.frame-61variant3:hover,
-.frame-61variant3_01:hover,
-.frame-61variant3_02:hover,
-.frame-61variant3_03:hover,
-.frame-61variant3_04:hover {
-  background-color: rgba(0, 0, 0, 0.05); /* Le da un tono más oscuro al fondo */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.frame-427318929 {
+  width: 1920px;
+  height: 1124px;
+  position: relative;
+  background: #EBF5FF;
+  overflow: hidden;
 }

@@ -1,103 +1,61 @@
 <div class="body_vista_pacientes">
   <img class="fondo_vista_paciente" src="assets/fondo_vista_paciente.png" />
-  <div class="rectangle-181"></div>
-  <div class="rectangle-81"></div>
+  <div class="barra_buscadora"></div>
+  <div class="btn_buscar"></div>
   <div class="buscar"><span class="buscar_span">Buscar</span></div>
   <div class="buscar-psiclogo"><span class="buscarpsiclogo_span">Buscar psicólogo</span></div>
-  <div class="rectangle-181_01"></div>
+  <!--<div class="especialidad_fondo"></div>
   <div class="text-"><span class="fspan"></span></div>
-  <div class="especialidad"><span class="especialidad_span">Especialidad</span></div>
-  <div class="rectangle-181_02"></div>
+  <div class="especialidad_filtro"><span class="especialidad_span">Especialidad</span></div>
+  -->
+  <mat-form-field appearance="fill">
+  <mat-label>Especialidad</mat-label>
+  <mat-select [(ngModel)]="filtroEspecialidad">
+    <mat-option [value]="null">Todas</mat-option>
+    <mat-option *ngFor="let e of especialidades" [value]="e.value">{{ e.label }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+  <div class="ubicacion_fondo"></div>
   <div class="text-_01"><span class="f01_span"></span></div>
-  <div class="ubicacin"><span class="ubicacin_span">Ubicación</span></div>
-  <div class="rectangle-181_03"></div>
+  <div class="ubicacion_filtro"><span class="ubicacin_span">Ubicación</span></div>
+  <div class="precio_fondo"></div>
   <div class="text-_02"><span class="f02_span"></span></div>
-  <div class="precio"><span class="precio_span">Precio</span></div>
-  <div class="rectangle"></div>
-  <div class="rectangle_01"></div>
-  <div class="psicologo_1">
-    <div class="dra-carla-torres-medina"><span class="dracarlatorresmedina_span">Dra. Carla Torres Medina</span></div>
-    <div class="psicoterapeuta-infantil"><span class="psicoterapeutainfantil_span">Psicoterapeuta infantil</span></div>
-    <img class="location" src="assets/Location.png" />
-    <img class="department" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores"><span class="avbenavides1034miraflores_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online"><span class="consultorioprivadoysesionesonline_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad"><span class="terapiaindividualyansiedad_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-desde-s-120"><span class="preciodesdes120_span">Precio desde S/ 120</span></div>
-    <img class="literature" src="assets/Literature.png" />
-    <img class="cash" src="assets/Cash.png" />
-    <img class="clock" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m"><span class="atencinlunesaviernes9am7pm_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
-  </div>
-  <div class="psicologo_1_01">
-    <div class="dra-carla-torres-medina_01"><span class="dracarlatorresmedina_01_span">Dra. Carla Torres Medina</span></div>
-    <div class="psicoterapeuta-infantil_01"><span class="psicoterapeutainfantil_01_span">Psicoterapeuta infantil</span></div>
-    <img class="location_01" src="assets/Location.png" />
-    <img class="department_01" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores_01"><span class="avbenavides1034miraflores_01_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online_01"><span class="consultorioprivadoysesionesonline_01_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad_01"><span class="terapiaindividualyansiedad_01_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-desde-s-120_01"><span class="preciodesdes120_01_span">Precio desde S/ 120</span></div>
-    <img class="literature_01" src="assets/Literature.png" />
-    <img class="cash_01" src="assets/Cash.png" />
-    <img class="clock_01" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m_01"><span class="atencinlunesaviernes9am7pm_01_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
-  </div>
-  <div class="psicologo_1_02">
-    <div class="dra-carla-torres-medina_02"><span class="dracarlatorresmedina_02_span">Dra. Carla Torres Medina</span></div>
-    <div class="psicoterapeuta-infantil_02"><span class="psicoterapeutainfantil_02_span">Psicoterapeuta infantil</span></div>
-    <img class="location_02" src="assets/Location.png" />
-    <img class="department_02" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores_02"><span class="avbenavides1034miraflores_02_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online_02"><span class="consultorioprivadoysesionesonline_02_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad_02"><span class="terapiaindividualyansiedad_02_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-desde-s-120_02"><span class="preciodesdes120_02_span">Precio desde S/ 120</span></div>
-    <img class="literature_02" src="assets/Literature.png" />
-    <img class="cash_02" src="assets/Cash.png" />
-    <img class="clock_02" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m_02"><span class="atencinlunesaviernes9am7pm_02_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
-  </div>
-  <div class="psicologo_1_03">
-    <div class="dra-carla-torres-medina_03"><span class="dracarlatorresmedina_03_span">Dra. Carla Torres Medina</span></div>
-    <div class="psicoterapeuta-infantil_03"><span class="psicoterapeutainfantil_03_span">Psicoterapeuta infantil</span></div>
-    <img class="location_03" src="assets/Location.png" />
-    <img class="department_03" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores_03"><span class="avbenavides1034miraflores_03_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online_03"><span class="consultorioprivadoysesionesonline_03_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad_03"><span class="terapiaindividualyansiedad_03_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-desde-s-120_03"><span class="preciodesdes120_03_span">Precio desde S/ 120</span></div>
-    <img class="literature_03" src="assets/Literature.png" />
-    <img class="cash_03" src="assets/Cash.png" />
-    <img class="clock_03" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m_03"><span class="atencinlunesaviernes9am7pm_03_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
-  </div>
+  <div class="precio_filtro"><span class="precio_span">Precio</span></div>
+  <!--<div class="rectangle"></div> fondo-->
+  <div class="page-content">
   <div class="resultados"><span class="resultados_span">Resultados</span></div>
-  <div class="psicologo_1_04">
-    <div class="dra-carla-torres-medina_04"><span class="dracarlatorresmedina_04_span">Dra. Carla Torres Medina</span></div>
-    <div class="psicoterapeuta-infantil_04"><span class="psicoterapeutainfantil_04_span">Psicoterapeuta infantil</span></div>
-    <img class="location_04" src="assets/Location.png" />
-    <img class="department_04" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores_04"><span class="avbenavides1034miraflores_04_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online_04"><span class="consultorioprivadoysesionesonline_04_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad_04"><span class="terapiaindividualyansiedad_04_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-desde-s-120_04"><span class="preciodesdes120_04_span">Precio desde S/ 120</span></div>
-    <img class="literature_04" src="assets/Literature.png" />
-    <img class="cash_04" src="assets/Cash.png" />
-    <img class="clock_04" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m_04"><span class="atencinlunesaviernes9am7pm_04_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
+  <div class="psicologo-grid">
+  <div class="psicologo-card" *ngFor="let p of psicologos">
+    <div class="nombre">{{ p.nombre }} {{ p.apellido }}</div>
+    <div class="especialidad">Psicología {{ p.especialidad }}</div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Location.png" alt="Ubicación">
+      <div class="direccion">{{ p.direccion }}</div>
+    </div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Department.png" alt="Modalidad">
+      <div class="modalidad">{{ p.modalidad }}</div>
+    </div>
+
+    <!--<div class="fila-dato">
+      <img class="icon" src="assets/Literature.png" alt="Terapias">
+      <div class="terapias">{{ p.especialidad }}</div>
+    </div>
+    -->
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Cash.png" alt="Precio">
+      <div class="precio">Precio desde S/ {{ p.tarifa }}</div>
+    </div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Clock.png" alt="Horario">
+      <div class="horario">{{ p.disponibilidad }}</div>
+    </div>
   </div>
-  <div class="psicologo_1_05">
-    <div class="dra-carla-torres-medina_05"><span class="dracarlatorresmedina_05_span">Dra. Carla Torres Medina</span></div>
-    <div class="psicoterapeuta-infantil_05"><span class="psicoterapeutainfantil_05_span">Psicoterapeuta infantil</span></div>
-    <img class="location_05" src="assets/Location.png" />
-    <img class="department_05" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores_05"><span class="avbenavides1034miraflores_05_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online_05"><span class="consultorioprivadoysesionesonline_05_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad_05"><span class="terapiaindividualyansiedad_05_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-desde-s-120_05"><span class="preciodesdes120_05_span">Precio desde S/ 120</span></div>
-    <img class="literature_05" src="assets/Literature.png" />
-    <img class="cash_05" src="assets/Cash.png" />
-    <img class="clock_05" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m_05"><span class="atencinlunesaviernes9am7pm_05_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
-  </div>
+</div>
+</div>
 </div>

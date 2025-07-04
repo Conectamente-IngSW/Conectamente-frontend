@@ -1,12 +1,13 @@
 .fondo_vista_paciente {
-  width: 100;
+  width: 100%;
   height: 326px;
   left: 0px;
   top: 2px;
   position: absolute;
+  z-index: -1;
 }
 
-.rectangle-181 {
+.barra_buscadora {
   width: 1319px;
   height: 73px;
   left: 303px;
@@ -14,9 +15,10 @@
   position: absolute;
   background: white;
   border-radius: 10px;
+  z-index: 0
 }
 
-.rectangle-81 {
+.btn_buscar {
   width: 183.16px;
   height: 63px;
   left: 1433.25px;
@@ -24,6 +26,7 @@
   position: absolute;
   background: #49BBBD;
   border-radius: 12px;
+  z-index: 0
 }
 
 .buscar_span {
@@ -59,15 +62,7 @@
   text-align: center;
 }
 
-.rectangle-181_01 {
-  width: 279px;
-  height: 73px;
-  left: 298px;
-  top: 175px;
-  position: absolute;
-  background: white;
-  border-radius: 10px;
-}
+
 
 .fspan {
   color: #252641;
@@ -95,7 +90,7 @@
   word-wrap: break-word;
 }
 
-.especialidad {
+.especialidad_filtro {
   width: 178.89px;
   left: 327.54px;
   top: 193px;
@@ -103,7 +98,7 @@
   text-align: center;
 }
 
-.rectangle-181_02 {
+.ubicacion_fondo {
   width: 279px;
   height: 73px;
   left: 614px;
@@ -111,6 +106,7 @@
   position: absolute;
   background: white;
   border-radius: 10px;
+  z-index: 0;
 }
 
 .f01_span {
@@ -139,7 +135,7 @@
   word-wrap: break-word;
 }
 
-.ubicacin {
+.ubicacion_filtro {
   width: 178.89px;
   left: 643.54px;
   top: 193px;
@@ -147,14 +143,15 @@
   text-align: center;
 }
 
-.rectangle-181_03 {
+.precio_fondo {
   width: 279px;
   height: 73px;
   left: 930px;
   top: 175px;
   position: absolute;
-  background: white;
   border-radius: 10px;
+  z-index: 0;
+  background: white;
 }
 
 .f02_span {
@@ -183,7 +180,7 @@
   word-wrap: break-word;
 }
 
-.precio {
+.precio_filtro {
   width: 206.34px;
   left: 953.25px;
   top: 193px;
@@ -191,1005 +188,81 @@
   text-align: center;
 }
 
-.rectangle {
-  width: 100%;
-  height: 1607px;
-  left: 0px;
-  top: 328px;
-  position: absolute;
-  opacity: 0.20;
-  background: #9DCCFF;
-}
-
-.rectangle_01 {
-  width: 100%;
-  height: 1607px;
-  left: 0px;
-  top: 328px;
-  position: absolute;
-  opacity: 0.20;
-  background: #9DCCFF;
-}
-
-.dracarlatorresmedina_span {
-  color: black;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dra-carla-torres-medina {
-  left: 54px;
-  top: 62px;
-  position: absolute;
-}
-
-.psicoterapeutainfantil_span {
-  color: rgba(0, 0, 0, 0.46);
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.psicoterapeuta-infantil {
-  left: 54px;
-  top: 107px;
-  position: absolute;
-}
-
-.location {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 174px;
-  position: absolute;
-}
-
-.department {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 226px;
-  position: absolute;
-}
-
-.avbenavides1034miraflores_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.av-benavides-1034-miraflores {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 174px;
-  position: absolute;
-}
-
-.consultorioprivadoysesionesonline_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.consultorio-privado-y-sesiones-online {
-  width: 302px;
-  height: 30px;
-  left: 101px;
-  top: 226px;
-  position: absolute;
-}
-
-.terapiaindividualyansiedad_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.terapia-individual-y-ansiedad {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 278px;
-  position: absolute;
-}
-
-.preciodesdes120_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.precio-desde-s-120 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 382px;
-  position: absolute;
-}
-
-.literature {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 278px;
-  position: absolute;
-}
-
-.cash {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 382px;
-  position: absolute;
-}
-
-.clock {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 330px;
-  position: absolute;
-}
-
-.atencinlunesaviernes9am7pm_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m {
-  width: 331px;
-  height: 30px;
-  left: 101px;
-  top: 330px;
-  position: absolute;
-}
-
-.dracarlatorresmedina_01_span {
-  color: black;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dra-carla-torres-medina_01 {
-  left: 54px;
-  top: 62px;
-  position: absolute;
-}
-
-.psicoterapeutainfantil_01_span {
-  color: rgba(0, 0, 0, 0.46);
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.psicoterapeuta-infantil_01 {
-  left: 54px;
-  top: 107px;
-  position: absolute;
-}
-
-.location_01 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 174px;
-  position: absolute;
-}
-
-.department_01 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 226px;
-  position: absolute;
-}
-
-.avbenavides1034miraflores_01_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.av-benavides-1034-miraflores_01 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 174px;
-  position: absolute;
-}
-
-.consultorioprivadoysesionesonline_01_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.consultorio-privado-y-sesiones-online_01 {
-  width: 302px;
-  height: 30px;
-  left: 101px;
-  top: 226px;
-  position: absolute;
-}
-
-.terapiaindividualyansiedad_01_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.terapia-individual-y-ansiedad_01 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 278px;
-  position: absolute;
-}
-
-.preciodesdes120_01_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.precio-desde-s-120_01 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 382px;
-  position: absolute;
-}
-
-.literature_01 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 278px;
-  position: absolute;
-}
-
-.cash_01 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 382px;
-  position: absolute;
-}
-
-.clock_01 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 330px;
-  position: absolute;
-}
-
-.atencinlunesaviernes9am7pm_01_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m_01 {
-  width: 331px;
-  height: 30px;
-  left: 101px;
-  top: 330px;
-  position: absolute;
-}
-
-.dracarlatorresmedina_02_span {
-  color: black;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dra-carla-torres-medina_02 {
-  left: 54px;
-  top: 62px;
-  position: absolute;
-}
-
-.psicoterapeutainfantil_02_span {
-  color: rgba(0, 0, 0, 0.46);
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.psicoterapeuta-infantil_02 {
-  left: 54px;
-  top: 107px;
-  position: absolute;
-}
-
-.location_02 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 174px;
-  position: absolute;
-}
-
-.department_02 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 226px;
-  position: absolute;
-}
-
-.avbenavides1034miraflores_02_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.av-benavides-1034-miraflores_02 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 174px;
-  position: absolute;
-}
-
-.consultorioprivadoysesionesonline_02_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.consultorio-privado-y-sesiones-online_02 {
-  width: 302px;
-  height: 30px;
-  left: 101px;
-  top: 226px;
-  position: absolute;
-}
-
-.terapiaindividualyansiedad_02_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.terapia-individual-y-ansiedad_02 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 278px;
-  position: absolute;
-}
-
-.preciodesdes120_02_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.precio-desde-s-120_02 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 382px;
-  position: absolute;
-}
-
-.literature_02 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 278px;
-  position: absolute;
-}
-
-.cash_02 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 382px;
-  position: absolute;
-}
-
-.clock_02 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 330px;
-  position: absolute;
-}
-
-.atencinlunesaviernes9am7pm_02_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m_02 {
-  width: 331px;
-  height: 30px;
-  left: 101px;
-  top: 330px;
-  position: absolute;
-}
-
-.dracarlatorresmedina_03_span {
-  color: black;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dra-carla-torres-medina_03 {
-  left: 54px;
-  top: 62px;
-  position: absolute;
-}
-
-.psicoterapeutainfantil_03_span {
-  color: rgba(0, 0, 0, 0.46);
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.psicoterapeuta-infantil_03 {
-  left: 54px;
-  top: 107px;
-  position: absolute;
-}
-
-.location_03 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 174px;
-  position: absolute;
-}
-
-.department_03 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 226px;
-  position: absolute;
-}
-
-.avbenavides1034miraflores_03_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.av-benavides-1034-miraflores_03 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 174px;
-  position: absolute;
-}
-
-.consultorioprivadoysesionesonline_03_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.consultorio-privado-y-sesiones-online_03 {
-  width: 302px;
-  height: 30px;
-  left: 101px;
-  top: 226px;
-  position: absolute;
-}
-
-.terapiaindividualyansiedad_03_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.terapia-individual-y-ansiedad_03 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 278px;
-  position: absolute;
-}
-
-.preciodesdes120_03_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.precio-desde-s-120_03 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 382px;
-  position: absolute;
-}
-
-.literature_03 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 278px;
-  position: absolute;
-}
-
-.cash_03 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 382px;
-  position: absolute;
-}
-
-.clock_03 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 330px;
-  position: absolute;
-}
-
-.atencinlunesaviernes9am7pm_03_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m_03 {
-  width: 331px;
-  height: 30px;
-  left: 101px;
-  top: 330px;
-  position: absolute;
-}
-
-.resultados_span {
-  color: #2F327D;
-  font-size: 44px;
-  font-family: Poppins;
-  font-weight: 600;
-  line-height: 79.20px;
-  word-wrap: break-word;
-}
-
-.resultados {
-  left: 836px;
-  top: 404px;
-  position: absolute;
-  text-align: center;
-}
-
-.dracarlatorresmedina_04_span {
-  color: black;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dra-carla-torres-medina_04 {
-  left: 54px;
-  top: 62px;
-  position: absolute;
-}
-
-.psicoterapeutainfantil_04_span {
-  color: rgba(0, 0, 0, 0.46);
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.psicoterapeuta-infantil_04 {
-  left: 54px;
-  top: 107px;
-  position: absolute;
-}
-
-.location_04 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 174px;
-  position: absolute;
-}
-
-.department_04 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 226px;
-  position: absolute;
-}
-
-.avbenavides1034miraflores_04_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.av-benavides-1034-miraflores_04 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 174px;
-  position: absolute;
-}
-
-.consultorioprivadoysesionesonline_04_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.consultorio-privado-y-sesiones-online_04 {
-  width: 302px;
-  height: 30px;
-  left: 101px;
-  top: 226px;
-  position: absolute;
-}
-
-.terapiaindividualyansiedad_04_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.terapia-individual-y-ansiedad_04 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 278px;
-  position: absolute;
-}
-
-.preciodesdes120_04_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.precio-desde-s-120_04 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 382px;
-  position: absolute;
-}
-
-.literature_04 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 278px;
-  position: absolute;
-}
-
-.cash_04 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 382px;
-  position: absolute;
-}
-
-.clock_04 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 330px;
-  position: absolute;
-}
-
-.atencinlunesaviernes9am7pm_04_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m_04 {
-  width: 331px;
-  height: 30px;
-  left: 101px;
-  top: 330px;
-  position: absolute;
-}
-
-.dracarlatorresmedina_05_span {
-  color: black;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.dra-carla-torres-medina_05 {
-  left: 54px;
-  top: 62px;
-  position: absolute;
-}
-
-.psicoterapeutainfantil_05_span {
-  color: rgba(0, 0, 0, 0.46);
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.psicoterapeuta-infantil_05 {
-  left: 54px;
-  top: 107px;
-  position: absolute;
-}
-
-.location_05 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 174px;
-  position: absolute;
-}
-
-.department_05 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 226px;
-  position: absolute;
-}
-
-.avbenavides1034miraflores_05_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.av-benavides-1034-miraflores_05 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 174px;
-  position: absolute;
-}
-
-.consultorioprivadoysesionesonline_05_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.consultorio-privado-y-sesiones-online_05 {
-  width: 302px;
-  height: 30px;
-  left: 101px;
-  top: 226px;
-  position: absolute;
-}
-
-.terapiaindividualyansiedad_05_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.terapia-individual-y-ansiedad_05 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 278px;
-  position: absolute;
-}
-
-.preciodesdes120_05_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.precio-desde-s-120_05 {
-  width: 246px;
-  height: 30px;
-  left: 101px;
-  top: 382px;
-  position: absolute;
-}
-
-.literature_05 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 278px;
-  position: absolute;
-}
-
-.cash_05 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 382px;
-  position: absolute;
-}
-
-.clock_05 {
-  width: 30px;
-  height: 30px;
-  left: 50px;
-  top: 330px;
-  position: absolute;
-}
-
-.atencinlunesaviernes9am7pm_05_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m_05 {
-  width: 331px;
-  height: 30px;
-  left: 90px;
-  top: 330px;
-  position: absolute;
-}
-
-.psicologo_1 {
-  width: 400px;
-  height: 484px;
-  left: 150px;
-  top: 1132px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-.psicologo_1_01 {
-  width: 400px;
-  height: 484px;
-  left: 650px;
-  top: 1131px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-.psicologo_1_02 {
-  width: 400px;
-  height: 484px;
-  left: 1160px;
-  top: 1131px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-.psicologo_1_03 {
-  width: 400px;
-  height: 484px;
-  left: 150px;
-  top: 525px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-.psicologo_1_04 {
-  width: 400px;
-  height: 484px;
-  left: 650px;
-  top: 524px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-.psicologo_1_05 {
-  width: 400px;
-  height: 484px;
-  left: 1160px;
-  top: 524px;
-  position: absolute;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  border-radius: 40px;
-}
 
 .body_vista_pacientes {
   width: 100%;
-  height: 1723px;
+  
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  padding-top: 330px;
+  z-index: 0;
+  background: rgba(157, 204, 255, 0.2);
 }
+
+
+/* info paciente */
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* opcional, para centrar horizontalmente todo */
+  padding: 4rem 2rem;
+  z-index: 0;
+}
+
+.resultados {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.psicologo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(484px, 1fr));
+  gap: 5rem;
+  width: 100%;
+  max-width: 100%;
+  justify-items: center;
+}
+
+.psicologo-card {
+  width: 484px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.psicologo-card:hover {
+  transform: translateY(-5px);
+}
+.nombre {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.especialidad {
+  color: #666;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 0.6rem;
+}
+
+.direccion, .modalidad, .terapias, .precio, .horario {
+  font-size: 0.95rem;
+}
+
+.fila-dato {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
