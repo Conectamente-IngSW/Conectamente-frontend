@@ -1,27 +1,39 @@
 <div class="body_vista_pacientes">
   <img class="fondo_vista_paciente" src="assets/fondo_vista_paciente.png" />
-  <div class="barra_buscadora"></div>
-  <div class="btn_buscar"></div>
-  <div class="buscar"><span class="buscar_span">Buscar</span></div>
-  <div class="buscar-psiclogo"><span class="buscarpsiclogo_span">Buscar psicólogo</span></div>
-  <!--<div class="especialidad_fondo"></div>
-  <div class="text-"><span class="fspan"></span></div>
-  <div class="especialidad_filtro"><span class="especialidad_span">Especialidad</span></div>
-  -->
-  <mat-form-field appearance="fill">
+
+  
+  <div class="filtro-busqueda-nombre">
+    <mat-form-field appearance="fill" class="campo-filtro">
+    <mat-label>Buscar por nombre o apellido</mat-label>
+    <input matInput [(ngModel)]="filtroNombre" placeholder="Ej. Carla" />
+    </mat-form-field>
+    <button mat-raised-button class="btn_buscar" (click)="filtrarPsicologos()">Buscar</button>
+</div>
+
+  <mat-form-field appearance="fill" class="filtro_especialidad">
   <mat-label>Especialidad</mat-label>
-  <mat-select [(ngModel)]="filtroEspecialidad">
-    <mat-option [value]="null">Todas</mat-option>
+  <mat-select [(ngModel)]="filtroEspecialidad" (selectionChange)="filtrarPsicologos()">
+    <mat-option [value]="null">Ninguno</mat-option>
     <mat-option *ngFor="let e of especialidades" [value]="e.value">{{ e.label }}</mat-option>
   </mat-select>
-</mat-form-field>
+  </mat-form-field>
 
-  <div class="ubicacion_fondo"></div>
-  <div class="text-_01"><span class="f01_span"></span></div>
-  <div class="ubicacion_filtro"><span class="ubicacin_span">Ubicación</span></div>
-  <div class="precio_fondo"></div>
-  <div class="text-_02"><span class="f02_span"></span></div>
-  <div class="precio_filtro"><span class="precio_span">Precio</span></div>
+  <mat-form-field appearance="fill" class="filtro_departamento">
+  <mat-label>Departamento</mat-label>
+  <mat-select [(ngModel)]="filtroDepartamento" (selectionChange)="filtrarPsicologos()">
+    <mat-option [value]="null">Ninguno</mat-option>
+    <mat-option *ngFor="let d of departamentos" [value]="d.value">{{ d.label }}</mat-option>
+  </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="filtro_precio">
+  <mat-label>Precio</mat-label>
+  <mat-select [(ngModel)]="filtroPrecio" (selectionChange)="filtrarPsicologos()">
+    <mat-option [value]="null">Ninguno</mat-option>
+    <mat-option *ngFor="let r of rangosPrecio" [value]="r.value">{{ r.label }}</mat-option>
+  </mat-select>
+  </mat-form-field>
+ 
   <!--<div class="rectangle"></div> fondo-->
   <div class="page-content">
   <div class="resultados"><span class="resultados_span">Resultados</span></div>
@@ -39,12 +51,6 @@
       <img class="icon" src="assets/Department.png" alt="Modalidad">
       <div class="modalidad">{{ p.modalidad }}</div>
     </div>
-
-    <!--<div class="fila-dato">
-      <img class="icon" src="assets/Literature.png" alt="Terapias">
-      <div class="terapias">{{ p.especialidad }}</div>
-    </div>
-    -->
 
     <div class="fila-dato">
       <img class="icon" src="assets/Cash.png" alt="Precio">

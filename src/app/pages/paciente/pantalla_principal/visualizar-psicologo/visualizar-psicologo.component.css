@@ -4,18 +4,8 @@
   left: 0px;
   top: 2px;
   position: absolute;
+  object-fit: cover;
   z-index: -1;
-}
-
-.barra_buscadora {
-  width: 1319px;
-  height: 73px;
-  left: 303px;
-  top: 82px;
-  position: absolute;
-  background: white;
-  border-radius: 10px;
-  z-index: 0
 }
 
 .btn_buscar {
@@ -25,173 +15,64 @@
   top: 87px;
   position: absolute;
   background: #49BBBD;
+  color: white;
+  border: none;
   border-radius: 12px;
+  font-size: 24px;
+  font-family: Poppins;
   z-index: 0
 }
 
-.buscar_span {
-  color: white;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 700;
-  word-wrap: break-word;
+.btn_buscar:hover {
+  background-color: #44a9ab; /* tono más oscuro al pasar el mouse */
 }
 
-.buscar {
-  width: 88px;
-  height: 31px;
-  left: 1481px;
-  top: 99px;
+.campo-filtro{
+  width: 1319px;
+  height: 100px;
+  left: 303px;
   position: absolute;
+  border-radius: 10px;
+  top: 82px;
+  z-index: 0
 }
 
-.buscarpsiclogo_span {
-  color: rgba(130.57, 131.38, 154.06, 0.60);
-  font-size: 20px;
-  font-family: Poppins;
-  font-weight: 400;
-  letter-spacing: 0.80px;
-  word-wrap: break-word;
-}
-
-.buscar-psiclogo {
-  width: 209px;
-  left: 333px;
-  top: 103px;
-  position: absolute;
-  text-align: center;
-}
-
-
-
-.fspan {
-  color: #252641;
-  font-size: 24px;
-  font-family: Font Awesome 5 Free;
-  font-weight: 900;
-  line-height: 32px;
-  word-wrap: break-word;
-}
-
-.text- {
-  width: 24.62px;
-  height: 32px;
-  left: 522.84px;
-  top: 197px;
-  position: absolute;
-}
-
-.especialidad_span {
-  color: #252641;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 500;
-  letter-spacing: 0.96px;
-  word-wrap: break-word;
-}
-
-.especialidad_filtro {
-  width: 178.89px;
-  left: 327.54px;
-  top: 193px;
-  position: absolute;
-  text-align: center;
-}
-
-.ubicacion_fondo {
+.filtro_especialidad{
   width: 279px;
   height: 73px;
+  top: 175px;
+  left: 298px;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.filtro_departamento{
+  width: 279px;
+  height: 73px;
+  top: 175px;
   left: 614px;
-  top: 175px;
   position: absolute;
   background: white;
   border-radius: 10px;
-  z-index: 0;
+  z-index: 1;
 }
 
-.f01_span {
-  color: #252641;
-  font-size: 24px;
-  font-family: Font Awesome 5 Free;
-  font-weight: 900;
-  line-height: 32px;
-  word-wrap: break-word;
-}
-
-.text-_01 {
-  width: 24.62px;
-  height: 32px;
-  left: 838.84px;
-  top: 197px;
-  position: absolute;
-}
-
-.ubicacin_span {
-  color: #252641;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 500;
-  letter-spacing: 0.96px;
-  word-wrap: break-word;
-}
-
-.ubicacion_filtro {
-  width: 178.89px;
-  left: 643.54px;
-  top: 193px;
-  position: absolute;
-  text-align: center;
-}
-
-.precio_fondo {
+.filtro_precio{
   width: 279px;
   height: 73px;
-  left: 930px;
   top: 175px;
+  left: 930px;
   position: absolute;
-  border-radius: 10px;
-  z-index: 0;
   background: white;
-}
-
-.f02_span {
-  color: #252641;
-  font-size: 24px;
-  font-family: Font Awesome 5 Free;
-  font-weight: 900;
-  line-height: 32px;
-  word-wrap: break-word;
-}
-
-.text-_02 {
-  width: 24.62px;
-  height: 32px;
-  left: 1160.08px;
-  top: 195px;
-  position: absolute;
-}
-
-.precio_span {
-  color: #252641;
-  font-size: 24px;
-  font-family: Poppins;
-  font-weight: 500;
-  letter-spacing: 0.96px;
-  word-wrap: break-word;
-}
-
-.precio_filtro {
-  width: 206.34px;
-  left: 953.25px;
-  top: 193px;
-  position: absolute;
-  text-align: center;
+  border-radius: 10px;
+  z-index: 1;
 }
 
 
 .body_vista_pacientes {
   width: 100%;
-  
   position: relative;
   overflow: hidden;
   min-height: 100vh;
