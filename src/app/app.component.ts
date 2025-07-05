@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router'; // ✅ IMPORTACIÓN NECESARIA
+import { RouterModule, RouterOutlet } from '@angular/router'; // ✅ IMPORTACIÓN NECESARIA
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet], // ✅ AÑADIDO AQUÍ TAMBIÉN
+  imports: [RouterOutlet, RouterModule], // ✅ AÑADIDO AQUÍ TAMBIÉN
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

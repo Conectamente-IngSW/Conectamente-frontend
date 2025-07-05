@@ -1,0 +1,22 @@
+.footer-custom {
+  background-color: #4cc2c2;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 14px;
+  border-radius: 0 0 24px 24px;
+  margin-top: 40px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-custom a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-custom a:hover {
+  color: #eaf6ff;
+}

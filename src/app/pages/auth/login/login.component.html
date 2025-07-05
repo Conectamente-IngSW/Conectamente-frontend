@@ -1,4 +1,4 @@
-<form (ngSubmit)="login()" class="login">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login">
   <div class="div">
     <div class="frame">
       <div class="overlap-group">
@@ -18,11 +18,10 @@
           </div>
         </div>
 
-        <!-- CORRECCIÓN: input estilizado directamente -->
+        <!-- inputs adaptados a Reactive Forms sin cambiar diseño -->
         <input
           type="text"
-          name="usernameOrEmail"
-          [(ngModel)]="loginForm.usernameOrEmail"
+          formControlName="usernameOrEmail"
           placeholder="Correo electrónico"
           class="input"
           required
@@ -30,8 +29,7 @@
 
         <input
           type="password"
-          name="password"
-          [(ngModel)]="loginForm.password"
+          formControlName="password"
           placeholder="Contraseña"
           class="input-2"
           required
@@ -48,9 +46,9 @@
         <div class="text-wrapper-5">¿No tienes cuenta?</div>
         <a class="text-wrapper-6" [routerLink]="['/register']">Crear cuenta</a>
       </div>
-
     </div>
 
     <img class="img" src="assets/imgLogin.png" />
   </div>
 </form>
+
