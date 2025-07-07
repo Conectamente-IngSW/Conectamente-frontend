@@ -1,0 +1,86 @@
+.registro-psicologo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebf5ff;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 150px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn-crear {
+  background-color: #49bbbd;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-crear:hover {
+  background-color: #3da5a7;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.footer span {
+  font-family: 'Quicksand', sans-serif;
+  margin-right: 0.5rem;
+}
+
+.footer .text-wrapper-4 {
+  color: #49bbbd;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
