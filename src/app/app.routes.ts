@@ -4,11 +4,37 @@ import { RegisterPacienteComponent } from './pages/auth/register-paciente/regist
 import { RegisterPsicologoComponent } from './pages/auth/register-psicologo/register-psicologo.component';
 
 export const routes: Routes = [
-  {path: 'auth', loadChildren: () => import('./pages/auth/auth.routes').then(m => m.authRoutes) },
-  {path: '', redirectTo: 'auth/login', pathMatch: 'full' },
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'register', component: SelectRegisterComponent },
-  { path: 'register/paciente', component: RegisterPacienteComponent },
-  { path: 'register/psicologo', component: RegisterPsicologoComponent },
-  { path: 'login', loadComponent: () => import('./pages/auth/login/login.component').then(m => m.LoginComponent) }
+  // AUTH MODULE (could also live in its own auth.routes.ts)
+  {
+    path: 'auth',
+    children: [
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'login', loadComponent: () =>
+          import('./pages/auth/login/login.component').then(m => m.LoginComponent)
+      },
+      { path: 'register', component: SelectRegisterComponent },
+      { path: 'register/paciente', component: RegisterPacienteComponent },
+      { path: 'register/psicologo', component: RegisterPsicologoComponent },
+    ]
+  },
+
+  // PACIENTE MODULE
+  {
+    path: 'paciente',
+    loadChildren: () =>
+      import('./pages/paciente/paciente.routes').then(m => m.pacienteRoutes)
+  },
+
+  // LANDING MODULE
+  {
+    path: 'landing',
+    loadChildren: () =>
+      import('./pages/landing/landing.routes').then(m => m.landingRoutes)
+  },
+
+  // Default redirect when someone hits '/'
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+
+  // Wildcard route for 404 / unknown paths
+  { path: '**', redirectTo: 'auth' }
 ];

@@ -1,0 +1,412 @@
+.micuenta_span {
+  color: #2F327D;
+  font-size: 54px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.mi-cuenta {
+  left: 119px;
+  top: 63px;
+  position: absolute;
+  text-align: center;
+}
+
+.rectangle-187 {
+  width: 1084px;
+  height: 832px;
+  left: -7px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 40px;
+}
+
+.configuracindelacuenta_span {
+  color: black;
+  font-size: 36px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.configuracin-de-la-cuenta {
+  width: 769px;
+  height: 72px;
+  left: 44px;
+  top: 58px;
+  position: absolute;
+}
+
+.nombres_span {
+  color: black;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.nombres {
+  width: 232px;
+  height: 36px;
+  left: 46px;
+  top: 171px;
+  position: absolute;
+}
+
+.apellidos_span {
+  color: black;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.apellidos {
+  width: 232px;
+  height: 36px;
+  left: 46px;
+  top: 257px;
+  position: absolute;
+}
+
+.correoelectrnico_span {
+  color: black;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.correo-electrnico {
+  width: 232px;
+  height: 36px;
+  left: 44px;
+  top: 343px;
+  position: absolute;
+}
+
+.telfono_span {
+  color: black;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.telfono {
+  width: 232px;
+  height: 36px;
+  left: 46px;
+  top: 429px;
+  position: absolute;
+}
+
+.direccin_span {
+  color: black;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.direccin {
+  width: 232px;
+  height: 36px;
+  left: 44px;
+  top: 515px;
+  position: absolute;
+}
+
+.emptylabel_span {
+  color: #ACACAC;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.empty-label {
+  left: 24px;
+  top: 16px;
+  position: absolute;
+}
+
+.emptylabel_01_span {
+  color: #ACACAC;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.empty-label_01 {
+  left: 24px;
+  top: 16px;
+  position: absolute;
+}
+
+.emptylabel_02_span {
+  color: #ACACAC;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.empty-label_02 {
+  left: 24px;
+  top: 16px;
+  position: absolute;
+}
+
+.emptylabel_03_span {
+  color: #ACACAC;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.empty-label_03 {
+  left: 24px;
+  top: 16px;
+  position: absolute;
+}
+
+.emptylabel_04_span {
+  color: #ACACAC;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.empty-label_04 {
+  left: 24px;
+  top: 16px;
+  position: absolute;
+}
+
+.trabajaconnosotros_span {
+  color: white;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0.44px;
+  word-wrap: break-word;
+}
+
+.trabaja-con-nosotros {
+  width: 247px;
+  height: 40.41px;
+  left: 52px;
+  top: 10px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup_span {
+  color: white;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0.44px;
+  word-wrap: break-word;
+}
+
+.sign-up {
+  left: 41.85px;
+  top: 14px;
+  position: absolute;
+}
+
+.rectangle-186 {
+  width: 447px;
+  height: 373px;
+  left: 2px;
+  top: 4px;
+  position: absolute;
+  background: white;
+  border-radius: 40px;
+}
+
+.miscitas_span {
+  color: black;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.mis-citas {
+  width: 232px;
+  height: 36px;
+  left: 54px;
+  top: 245px;
+  position: absolute;
+}
+
+.line-44 {
+  width: 346px;
+  height: 0px;
+  left: 53px;
+  top: 199px;
+  position: absolute;
+  outline: 1px rgba(0, 0, 0, 0.50) solid;
+  outline-offset: -0.50px;
+}
+
+.configuracindelacuenta_02_span {
+  color: #2D36FF;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.configuracin-de-la-cuenta_02 {
+  width: 225px;
+  height: 85px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.frame-427318923 {
+  width: 100px;
+  height: 100px;
+  left: 1717px;
+  top: 781px;
+  position: absolute;
+}
+
+.frame-61variant3 {
+  width: 435px;
+  height: 54px;
+  left: 357px;
+  top: 162px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 40px;
+  outline: 1px #6BC8C9 solid;
+  outline-offset: -1px;
+}
+
+.frame-61variant3_01 {
+  width: 435px;
+  height: 54px;
+  left: 357px;
+  top: 248px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 40px;
+  outline: 1px #6BC8C9 solid;
+  outline-offset: -1px;
+}
+
+.frame-61variant3_02 {
+  width: 435px;
+  height: 54px;
+  left: 357px;
+  top: 334px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 40px;
+  outline: 1px #6BC8C9 solid;
+  outline-offset: -1px;
+}
+
+.frame-61variant3_03 {
+  width: 435px;
+  height: 54px;
+  left: 357px;
+  top: 420px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 40px;
+  outline: 1px #6BC8C9 solid;
+  outline-offset: -1px;
+}
+
+.frame-61variant3_04 {
+  width: 435px;
+  height: 54px;
+  left: 357px;
+  top: 506px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 40px;
+  outline: 1px #6BC8C9 solid;
+  outline-offset: -1px;
+}
+
+.btn_trabaja {
+  width: 351px;
+  height: 60px;
+  left: 44px;
+  top: 696px;
+  position: absolute;
+  background: #49BBBD;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border-radius: 36px;
+}
+
+.signup_button {
+  width: 186px;
+  height: 60px;
+  left: 792px;
+  top: 696px;
+  position: absolute;
+  background: #7ECCCD;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border-radius: 80px;
+}
+
+.configuracin-de-la-cuenta_01 {
+  width: 225px;
+  height: 85px;
+  left: 53px;
+  top: 86px;
+  position: absolute;
+}
+
+.frame-125 {
+  width: 1085px;
+  height: 836px;
+  left: 642px;
+  top: 182px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.frame-126 {
+  width: 449px;
+  height: 377px;
+  left: 119px;
+  top: 182px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.mi_cuenta_contenido {
+  width: 1920px;
+  height: 1118px;
+  left: 0px;
+  top: 6px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.frame-427318929 {
+  width: 1920px;
+  height: 1124px;
+  position: relative;
+  background: #EBF5FF;
+  overflow: hidden;
+}
