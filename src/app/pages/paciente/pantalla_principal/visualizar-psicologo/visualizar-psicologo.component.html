@@ -38,7 +38,7 @@
   <div class="page-content">
   <div class="resultados"><span class="resultados_span">Resultados</span></div>
   <div class="psicologo-grid">
-  <div class="psicologo-card" *ngFor="let p of psicologos">
+  <div class="psicologo-card" *ngFor="let p of psicologos" (click)="verPerfil(p.id)">
     <div class="nombre">{{ p.nombre }} {{ p.apellido }}</div>
     <div class="especialidad">Psicología {{ p.especialidad }}</div>
 

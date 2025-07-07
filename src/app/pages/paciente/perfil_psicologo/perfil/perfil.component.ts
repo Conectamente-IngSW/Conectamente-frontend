@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-perfil',
@@ -9,5 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './perfil.component.css'
 })
 export class PerfilComponent {
+
+  
 
 }

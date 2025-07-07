@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
+import { Router } from '@angular/router';
 
 // Angular Material
 import {MatInputModule} from '@angular/material/input';
@@ -84,7 +85,9 @@ rangosPrecio = [
 ];
 
 //Cargar data de los psicólogos al iniciar el componente
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     // Al iniciar sesión (o al cargar el componente), obtener todos los psicólogos
@@ -93,6 +96,8 @@ rangosPrecio = [
         console.log('Psicólogos cargados:', data);
         this.psicologos = data;
       });
+
+
   }
 
 
@@ -140,6 +145,11 @@ filtrarPsicologos(): void {
       this.psicologos = data;
     });
 }
+
+
+verPerfil(id: number) {
+  this.router.navigate(['paciente/perfil_psicologo/perfil', id]);}
+
 
 
 }
