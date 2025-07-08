@@ -1,27 +1,54 @@
-<div class="login">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login">
   <div class="div">
     <div class="frame">
       <div class="overlap-group">
         <div class="group">
-          <div class="div-wrapper"><div class="text-wrapper">Accede a tu cuenta</div></div>
+          <div class="div-wrapper">
+            <div class="text-wrapper">Accede a tu cuenta</div>
+          </div>
           <div class="group-2">
-            <div class="group-3"><div class="text-wrapper-2">Email</div></div>
+            <div class="group-3">
+              <div class="text-wrapper-2">Email</div>
+            </div>
             <div class="group-wrapper">
-              <div class="group-4"><div class="text-wrapper-2">Contraseña</div></div>
+              <div class="group-4">
+                <div class="text-wrapper-2">Contraseña</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="input"><div class="text-wrapper-3">Empty label</div></div>
-        <div class="input-2"><div class="text-wrapper-3">Empty label</div></div>
-        <div class="btn-acceder"><div class="text-wrapper-4">Acceder</div></div>
+
+        <!-- inputs adaptados a Reactive Forms sin cambiar diseño -->
+        <input
+          type="text"
+          formControlName="usernameOrEmail"
+          placeholder="Correo electrónico"
+          class="input"
+          required
+        />
+
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Contraseña"
+          class="input-2"
+          required
+        />
+
+        <button type="submit" class="btn-acceder">
+          <div class="text-wrapper-4">Acceder</div>
+        </button>
       </div>
+
       <img class="logo-secundario" src="assets/logoSecundario.png" />
+
       <div class="group-5">
-        <!--<img class="line" src="img/line-4.svg" />-->
         <div class="text-wrapper-5">¿No tienes cuenta?</div>
-        <div class="text-wrapper-6">Crear cuenta</div>
+        <a class="text-wrapper-6" [routerLink]="['/register']">Crear cuenta</a>
       </div>
     </div>
+
     <img class="img" src="assets/imgLogin.png" />
   </div>
-</div>
+</form>
+
