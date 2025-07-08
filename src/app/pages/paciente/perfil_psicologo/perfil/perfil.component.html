@@ -1,4 +1,8 @@
 <div class="body">
+  
+  <div class="rectangle_01"></div>
+  <div class="certificados"><span class="certificados_span">Certificados</span></div>
+  <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
   <div class="image-18"></div>
   <div class="rectangle"></div>
   <div data-property-1="Default" class="btn_trabaja">
@@ -25,9 +29,7 @@
   <div data-property-1="Default" class="btn_trabaja_07">
     <div class="trabaja-con-nosotros_07"><span class="trabajaconnosotros_07_span">17:00</span></div>
   </div>
-  <div class="rectangle_01"></div>
-  <div class="certificados"><span class="certificados_span">Certificados</span></div>
-  <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
+
   <div class="frame-427318913">
     <div class="comentario_1">
       <div class="llegu-a-consulta-con-ansiedad-constante-y-dificultades-para-dormir-desde-la-primera-sesin-con-el-dr-javier-ramrez-sent-un-espacio-seguro-y-de-escucha-genuina-su-enfoque-me-ayud-a-entender-lo-que-estaba-sintiendo-y-a-trabajar-en-herramientas-prcticas-para-manejar-mis-emociones-hoy-me-siento-mucho-ms-tranquila-y-en-control-recomiendo-totalmente-su-acompaamiento-especialmente-si-ests-buscando-un-psiclogo-emptico-y-profesional"><span class="lleguaconsultaconansiedadconstanteydificultadesparadormirdesdelaprimerasesinconeldrjavierramrezsentunespacioseguroydeescuchagenuinasuenfoquemeayudaentenderloqueestabasintiendoyatrabajarenherramientasprcticasparamanejarmisemocioneshoymesientomuchomstranquilayencontrolrecomiendototalmentesuacompaamientoespecialmentesiestsbuscandounpsiclogoempticoyprofesional_span">Llegué a consulta con ansiedad constante y dificultades para dormir. Desde la primera sesión con el Dr. Javier Ramírez sentí un espacio seguro y de escucha genuina. Su enfoque me ayudó a entender lo que estaba sintiendo y a trabajar en herramientas prácticas para manejar mis emociones. Hoy me siento mucho más tranquila y en control. Recomiendo totalmente su acompañamiento, especialmente si estás buscando un psicólogo empático y profesional</span></div>
@@ -49,33 +51,79 @@
     </div>
     <div class="resea"><span class="resea_span">Reseña</span></div>
   </div>
-  <div class="cabecera">
-    <div class="psicoterapeuta-infantil"><span class="psicoterapeutainfantil_span">Psicoterapeuta infantil</span></div>
-    <div class="nmero-de-colegiado-rne-16645-cmp-98362"><span class="nmerodecolegiadorne16645cmp98362_span">Número de colegiado: RNE 16645 CMP 98362</span></div>
-    <div class="dra-carla-torres-medina"><span class="dracarlatorresmedina_span">Dra. Carla Torres Medina</span></div>
+
+  <div class="cabecera" *ngIf="psicologo">
+    <div class="especialidad">
+      <span class="especialidad_span">Especialista en psicología {{ psicologo.especialidad }}</span>
+    </div>
+    <div class="num_colegiado">
+      <span class="num_colegiado_span">Número de colegiado: {{ psicologo.numColegiatura }}</span>
+    </div>
+    <div class="nombre_psicologo">
+      <span class="nombre_psicologo_span">Dr. {{ psicologo.nombre }} {{ psicologo.apellido }}</span>
+    </div>
     <div data-property-1="Default" class="btn_trabaja_08">
-      <div class="trabaja-con-nosotros_08"><span class="trabajaconnosotros_08_span">Enviar Mensaje</span></div>
+      <div class="trabaja-con-nosotros_08">
+        <span class="trabajaconnosotros_08_span">Enviar Mensaje</span>
+      </div>
     </div>
     <div data-property-1="Default" class="btn_trabaja_09">
-      <div class="trabaja-con-nosotros_09"><span class="trabajaconnosotros_09_span">Agendar Cita</span></div>
+      <div class="trabaja-con-nosotros_09">
+        <span class="trabajaconnosotros_09_span">Agendar Cita</span>
+      </div>
     </div>
   </div>
+
   <div class="experiencia">
-    <div class="titulo_experiencia"><span class="titulo_experiencia_span">Experiencia</span></div>
-    <div class="hola-soy-psicoterapeuta-infantil-y-desde-hace-ms-de-10-aos-acompao-a-nios-y-familias-en-el-descubrimiento-y-fortalecimiento-de-su-mundo-emocional-a-lo-largo-de-mi-carrera-he-tenido-el-privilegio-de-trabajar-en-clnicas-privadas-centros-de-desarrollo-infantil-y-colegios-donde-he-podido-brindar-apoyo-tanto-en-contextos-clnicos-como-educativos-mi-trabajo-se-centra-en-ayudar-a-los-nios-a-expresar-lo-que-muchas-veces-no-pueden-poner-en-palabras-sus-miedos-sus-enojos-sus-preguntas-utilizo-el-juego-como-principal-herramienta-teraputica-combinando-tcnicas-de-intervencin-emocional-con-un-enfoque-respetuoso-emptico-y-basado-en-la-evidencia-creo-firmemente-que-cada-nio-necesita-sentirse-seguro-y-comprendido-para-poder-avanzar-y-eso-es-lo-que-busco-construir-en-cada-sesin-tambin-acompao-a-madres-padres-y-cuidadores-brindndoles-estrategias-claras-para-comprender-mejor-el-comportamiento-de-sus-hijos-y-fortalecer-el-vnculo-familiar-s-que-criar-no-es-fcil-y-por-eso-me-gusta-trabajar-en-equipo-con-las-familias-desde-la-cercana-sin-juicios-y-con-mucha-escucha-me-especializo-en-casos-de-ansiedad-infantil-cambios-de-conducta-procesos-de-duelo-dificultades-de-adaptacin-escolar-y-orientacin-en-crianza-actualmente-atiendo-de-manera-presencial-en-consulta-privada-y-tambin-ofrezco-sesiones-virtuales-si-ests-buscando-un-espacio-donde-tu-hijo-o-hija-pueda-ser-escuchado-y-acompaado-con-calidez-y-profesionalismo-estar-encantada-de-caminar-ese-proceso-contigo"><span class="holasoypsicoterapeutainfantilydesdehacemsde10aosacompaoaniosyfamiliaseneldescubrimientoyfortalecimientodesumundoemocionalalolargodemicarrerahetenidoelprivilegiodetrabajarenclnicasprivadascentrosdedesarrolloinfantilycolegiosdondehepodidobrindarapoyotantoencontextosclnicoscomoeducativosmitrabajosecentraenayudaralosniosaexpresarloquemuchasvecesnopuedenponerenpalabrassusmiedossusenojossuspreguntasutilizoeljuegocomoprincipalherramientateraputicacombinandotcnicasdeintervencinemocionalconunenfoquerespetuosoempticoybasadoenlaevidenciacreofirmementequecadanionecesitasentirseseguroycomprendidoparapoderavanzaryesoesloquebuscoconstruirencadasesintambinacompaoamadrespadresycuidadoresbrindndolesestrategiasclarasparacomprendermejorelcomportamientodesushijosyfortalecerelvnculofamiliarsquecriarnoesfcilyporesomegustatrabajarenequipoconlasfamiliasdesdelacercanasinjuiciosyconmuchaescuchameespecializoencasosdeansiedadinfantilcambiosdeconductaprocesosdeduelodificultadesdeadaptacinescolaryorientacinencrianzaactualmenteatiendodemanerapresencialenconsultaprivadaytambinofrezcosesionesvirtualessiestsbuscandounespaciodondetuhijoohijapuedaserescuchadoyacompaadoconcalidezyprofesionalismoestarencantadadecaminareseprocesocontigo_span">Hola, soy psicoterapeuta infantil y desde hace más de 10 años acompaño a niños y familias en el descubrimiento y fortalecimiento de su mundo emocional. A lo largo de mi carrera, he tenido el privilegio de trabajar en clínicas privadas, centros de desarrollo infantil y colegios, donde he podido brindar apoyo tanto en contextos clínicos como educativos.<br/>Mi trabajo se centra en ayudar a los niños a expresar lo que muchas veces no pueden poner en palabras: sus miedos, sus enojos, sus preguntas. Utilizo el juego como principal herramienta terapéutica, combinando técnicas de intervención emocional con un enfoque respetuoso, empático y basado en la evidencia. Creo firmemente que cada niño necesita sentirse seguro y comprendido para poder avanzar, y eso es lo que busco construir en cada sesión.<br/>También acompaño a madres, padres y cuidadores, brindándoles estrategias claras para comprender mejor el comportamiento de sus hijos y fortalecer el vínculo familiar. Sé que criar no es fácil, y por eso me gusta trabajar en equipo con las familias, desde la cercanía, sin juicios, y con mucha escucha.<br/>Me especializo en casos de ansiedad infantil, cambios de conducta, procesos de duelo, dificultades de adaptación escolar y orientación en crianza. Actualmente atiendo de manera presencial en consulta privada y también ofrezco sesiones virtuales.<br/>Si estás buscando un espacio donde tu hijo o hija pueda ser escuchado y acompañado con calidez y profesionalismo, estaré encantada de caminar ese proceso contigo.</span></div>
+    <div class="titulo_experiencia">
+      <span class="titulo_experiencia_span">Experiencia</span>
+    </div>
+    <div class="experiencia_contenido">
+      <span class="experiencia_span">{{ psicologo.descripcion }}</span></div>
   </div>
-  <div class="consultorio_01">
-    <div class="rectangle_02"></div>
-    <div class="consultorio"><span class="consultorio_span">Consultorio</span></div>
+  
+<div class="consultorio_01" *ngIf="psicologo">
+  <div class="rectangle_02">
+    <div class="consultorio">
+      <span class="consultorio_span">Consultorio</span>
+    </div>
+
     <img class="location" src="assets/Location.png" />
     <img class="department" src="assets/Department.png" />
-    <div class="av-benavides-1034-miraflores"><span class="avbenavides1034miraflores_span">Av. Benavides 1034, Miraflores</span></div>
-    <div class="consultorio-privado-y-sesiones-online"><span class="consultorioprivadoysesionesonline_span">Consultorio privado y sesiones online</span></div>
-    <div class="terapia-individual-y-ansiedad"><span class="terapiaindividualyansiedad_span">Terapia individual y ansiedad</span></div>
-    <div class="precio-por-consulta-consulta-individual-presencial-s-120-consulta-individual-virtual-zoom-s-100-terapia-de-pareja-s-160-terapia-familiar-s-180"><span class="precioporconsultaconsultaindividualpresencials120consultaindividualvirtualzooms100terapiadeparejas160terapiafamiliars180_span">Precio por consulta<br/><br/>Consulta individual presencial  S/ 120<br/><br/>Consulta individual virtual (Zoom) S/ 100 <br/><br/>Terapia de pareja  S/ 160<br/><br/>Terapia familiar S/ 180</span></div>
+
+    <!-- Dirección del psicólogo -->
+    <div class="av-benavides-1034-miraflores">
+      <span class="avbenavides1034miraflores_span">{{ psicologo.direccion }}</span>
+    </div>
+    <!-- Modalidad (por ejemplo, privado y online) -->
+    <div class="consultorio-privado-y-sesiones-online">
+      <span class="consultorioprivadoysesionesonline_span">
+        {{ psicologo.modalidad }}
+      </span>
+    </div>
+    <!-- Especialidades -->
+    <div class="terapia-individual-y-ansiedad">
+      <span class="terapiaindividualyansiedad_span">
+        {{ psicologo.especialidad }}
+      </span>
+    </div>
+    <!-- Precios -->
+    <div class="precio-por-consulta">
+      <span class="precioporconsultaconsultaindividualpresencials120consultaindividualvirtualzooms100terapiadeparejas160terapiafamiliars180_span">
+        Precio por consulta desde S/{{ psicologo.tarifa }}
+      </span>
+    </div>
     <img class="literature" src="assets/Literature.png" />
     <img class="cash" src="assets/Cash.png" />
     <img class="clock" src="assets/Clock.png" />
-    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m"><span class="atencinlunesaviernes9am7pm_span">Atención: Lunes a viernes, 9 a. m. – 7 p. m.</span></div>
+    <!-- Horario de atención -->
+    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m">
+      <span class="atencinlunesaviernes9am7pm_span">
+        Atención: {{ psicologo.disponibilidad }}
+      </span>
+    </div>
   </div>
 </div>
+</div>
+
+

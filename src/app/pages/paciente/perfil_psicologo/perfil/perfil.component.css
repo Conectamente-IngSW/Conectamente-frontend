@@ -394,7 +394,7 @@
   text-align: center;
 }
 
-.psicoterapeutainfantil_span {
+.especialidad_span {
   color: black;
   font-size: 36px;
   font-family: Poppins;
@@ -402,13 +402,13 @@
   word-wrap: break-word;
 }
 
-.psicoterapeuta-infantil {
+.especialidad {
   left: 137px;
   top: 268px;
   position: absolute;
 }
 
-.nmerodecolegiadorne16645cmp98362_span {
+.num_colegiado_span {
   color: black;
   font-size: 36px;
   font-family: Poppins;
@@ -416,13 +416,13 @@
   word-wrap: break-word;
 }
 
-.nmero-de-colegiado-rne-16645-cmp-98362 {
+.num_colegiado {
   left: 137px;
   top: 347px;
   position: absolute;
 }
 
-.dracarlatorresmedina_span {
+.nombre_psicologo_span {
   color: black;
   font-size: 54px;
   font-family: Poppins;
@@ -430,7 +430,7 @@
   word-wrap: break-word;
 }
 
-.dra-carla-torres-medina {
+.nombre_psicologo {
   left: 129px;
   top: 151px;
   position: absolute;
@@ -492,7 +492,7 @@
   text-align: center;
 }
 
-.holasoypsicoterapeutainfantilydesdehacemsde10aosacompaoaniosyfamiliaseneldescubrimientoyfortalecimientodesumundoemocionalalolargodemicarrerahetenidoelprivilegiodetrabajarenclnicasprivadascentrosdedesarrolloinfantilycolegiosdondehepodidobrindarapoyotantoencontextosclnicoscomoeducativosmitrabajosecentraenayudaralosniosaexpresarloquemuchasvecesnopuedenponerenpalabrassusmiedossusenojossuspreguntasutilizoeljuegocomoprincipalherramientateraputicacombinandotcnicasdeintervencinemocionalconunenfoquerespetuosoempticoybasadoenlaevidenciacreofirmementequecadanionecesitasentirseseguroycomprendidoparapoderavanzaryesoesloquebuscoconstruirencadasesintambinacompaoamadrespadresycuidadoresbrindndolesestrategiasclarasparacomprendermejorelcomportamientodesushijosyfortalecerelvnculofamiliarsquecriarnoesfcilyporesomegustatrabajarenequipoconlasfamiliasdesdelacercanasinjuiciosyconmuchaescuchameespecializoencasosdeansiedadinfantilcambiosdeconductaprocesosdeduelodificultadesdeadaptacinescolaryorientacinencrianzaactualmenteatiendodemanerapresencialenconsultaprivadaytambinofrezcosesionesvirtualessiestsbuscandounespaciodondetuhijoohijapuedaserescuchadoyacompaadoconcalidezyprofesionalismoestarencantadadecaminareseprocesocontigo_span {
+.experiencia_span {
   color: black;
   font-size: 24px;
   font-family: Poppins;
@@ -500,7 +500,7 @@
   word-wrap: break-word;
 }
 
-.hola-soy-psicoterapeuta-infantil-y-desde-hace-ms-de-10-aos-acompao-a-nios-y-familias-en-el-descubrimiento-y-fortalecimiento-de-su-mundo-emocional-a-lo-largo-de-mi-carrera-he-tenido-el-privilegio-de-trabajar-en-clnicas-privadas-centros-de-desarrollo-infantil-y-colegios-donde-he-podido-brindar-apoyo-tanto-en-contextos-clnicos-como-educativos-mi-trabajo-se-centra-en-ayudar-a-los-nios-a-expresar-lo-que-muchas-veces-no-pueden-poner-en-palabras-sus-miedos-sus-enojos-sus-preguntas-utilizo-el-juego-como-principal-herramienta-teraputica-combinando-tcnicas-de-intervencin-emocional-con-un-enfoque-respetuoso-emptico-y-basado-en-la-evidencia-creo-firmemente-que-cada-nio-necesita-sentirse-seguro-y-comprendido-para-poder-avanzar-y-eso-es-lo-que-busco-construir-en-cada-sesin-tambin-acompao-a-madres-padres-y-cuidadores-brindndoles-estrategias-claras-para-comprender-mejor-el-comportamiento-de-sus-hijos-y-fortalecer-el-vnculo-familiar-s-que-criar-no-es-fcil-y-por-eso-me-gusta-trabajar-en-equipo-con-las-familias-desde-la-cercana-sin-juicios-y-con-mucha-escucha-me-especializo-en-casos-de-ansiedad-infantil-cambios-de-conducta-procesos-de-duelo-dificultades-de-adaptacin-escolar-y-orientacin-en-crianza-actualmente-atiendo-de-manera-presencial-en-consulta-privada-y-tambin-ofrezco-sesiones-virtuales-si-ests-buscando-un-espacio-donde-tu-hijo-o-hija-pueda-ser-escuchado-y-acompaado-con-calidez-y-profesionalismo-estar-encantada-de-caminar-ese-proceso-contigo {
+.experiencia_contenido {
   width: 1382px;
   height: 648px;
   left: 127px;
@@ -514,8 +514,7 @@
   left: 0px;
   top: 2px;
   position: absolute;
-  opacity: 0.20;
-  background: #9DCCFF;
+  background: #EBF5FF;
   border-radius: 30px;
 }
 
@@ -607,7 +606,7 @@
   word-wrap: break-word;
 }
 
-.precio-por-consulta-consulta-individual-presencial-s-120-consulta-individual-virtual-zoom-s-100-terapia-de-pareja-s-160-terapia-familiar-s-180 {
+.precio-por-consulta {
   width: 402px;
   height: 227.85px;
   left: 130px;
@@ -780,7 +779,7 @@
   height: 871px;
   left: 140px;
   top: 768px;
-  position: absolute;
+  position: relative;
   background: #EBF5FF;
   overflow: hidden;
 }
