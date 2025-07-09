@@ -63,7 +63,9 @@ export class RegisterPsicologoComponent {
       apellido: this.registerForm.value.apellidos,
       email: this.registerForm.value.email,
       dni: this.registerForm.value.dni,
+
       edad: parseInt(this.registerForm.value.edad),
+
       especialidad: this.registerForm.value.especialidad,
       numColegiatura: this.registerForm.value.numColegiatura,
       password: this.registerForm.value.password
