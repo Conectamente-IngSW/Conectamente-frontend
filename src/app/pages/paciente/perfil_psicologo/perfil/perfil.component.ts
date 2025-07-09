@@ -5,15 +5,39 @@ import { PsicologoService, VisualizarPsicologoDTO } from '../../../../core/servi
 import { CommonModule } from '@angular/common';
 
 
+// Angular Material
+import {ChangeDetectionStrategy, model} from '@angular/core';
+import {provideNativeDateAdapter} from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+
 @Component({
   selector: 'app-perfil',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, 
+    CommonModule, 
+    MatInputModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatDatepickerModule, 
+    MatIconModule, 
+    MatIconModule,
+    MatCardModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [provideNativeDateAdapter()],
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.css'
 })
 
 export class PerfilComponent implements OnInit {
+
+  //calendario
+  selected = model<Date | null>(null);
 
   psicologo!: VisualizarPsicologoDTO;
 

@@ -8,7 +8,7 @@
 
 .rectangle {
   width: 957px;
-  height: 385px;
+  height: 800px;
   left: 820px;
   top: 1450px;
   position: absolute;
@@ -187,34 +187,6 @@
   flex-direction: column;
 }
 
-.rectangle_01 {
-  width: 957px;
-  height: 385px;
-  left: 820px;
-  top: 1870px;
-  position: absolute;
-  opacity: 0.20;
-  background: #9DCCFF;
-  border-radius: 30px;
-}
-
-.certificados_span {
-  color: #2F327D;
-  font-size: 44px;
-  font-family: Poppins;
-  font-weight: 600;
-  line-height: 79.20px;
-  word-wrap: break-word;
-}
-
-.certificados {
-  width: 329px;
-  left: 906px;
-  top: 1900px;
-  position: absolute;
-  text-align: center;
-}
-
 .agendatucita_span {
   color: #2F327D;
   font-size: 44px;
@@ -232,6 +204,11 @@
   text-align: center;
 }
 
+.demo-inline-calendar-card {
+  width: 300px;
+  left: 906px;
+  top: 1600px;
+}
 .lleguaconsultaconansiedadconstanteydificultadesparadormirdesdelaprimerasesinconeldrjavierramrezsentunespacioseguroydeescuchagenuinasuenfoquemeayudaentenderloqueestabasintiendoyatrabajarenherramientasprcticasparamanejarmisemocioneshoymesientomuchomstranquilayencontrolrecomiendototalmentesuacompaamientoespecialmentesiestsbuscandounpsiclogoempticoyprofesional_span {
   color: #696984;
   font-size: 20px;
@@ -836,16 +813,44 @@
   width: 1634px;
   height: 850px;
   left: 143px;
-  top: 2350px;
+  top: 2850px;
   position: absolute;
   background: #EBF5FF;
   overflow: hidden;
   border-radius: 30px;
 }
 
+.rectangle_01 {
+  width: 1634px;
+  height: 500px;
+  left: 143px;
+  top: 2300px;
+  position: absolute;
+  opacity: 0.20;
+  background: #9DCCFF;
+  border-radius: 30px;
+}
+
+.certificados_span {
+  color: #2F327D;
+  font-size: 44px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 79.20px;
+  word-wrap: break-word;
+}
+
+.certificados {
+  width: 329px;
+  left: 200px;
+  top: 2350px;
+  position: absolute;
+  text-align: center;
+}
+
 .body {
   width: 1920px;
-  height: 3479px;
+  height: 3800px;
   position: relative;
   overflow: hidden;
 }

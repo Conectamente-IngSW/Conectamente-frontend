@@ -3,29 +3,36 @@
   <div class="rectangle_01"></div>
   <div class="certificados"><span class="certificados_span">Certificados</span></div>
   
-  <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
+  
+
   <div class="image-18"></div>
+  <mat-card class="demo-inline-calendar-card">
+  <mat-calendar [(selected)]="selected"></mat-calendar>
+</mat-card>
+<p>Selected date: {{selected()}}</p>
+
   <div class="rectangle"></div>
+  <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
   <div data-property-1="Default" class="btn_trabaja">
     <div class="trabaja-con-nosotros"><span class="trabajaconnosotros_span">10:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_01">
-    <div class="trabaja-con-nosotros_01"><span class="trabajaconnosotros_01_span">14:00</span></div>
+    <div class="trabaja-con-nosotros_01"><span class="trabajaconnosotros_01_span">11:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_02">
     <div class="trabaja-con-nosotros_02"><span class="trabajaconnosotros_02_span">12:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_03">
-    <div class="trabaja-con-nosotros_03"><span class="trabajaconnosotros_03_span">16:00</span></div>
+    <div class="trabaja-con-nosotros_03"><span class="trabajaconnosotros_03_span">13:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_04">
-    <div class="trabaja-con-nosotros_04"><span class="trabajaconnosotros_04_span">11:00</span></div>
+    <div class="trabaja-con-nosotros_04"><span class="trabajaconnosotros_04_span">14:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_05">
     <div class="trabaja-con-nosotros_05"><span class="trabajaconnosotros_05_span">15:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_06">
-    <div class="trabaja-con-nosotros_06"><span class="trabajaconnosotros_06_span">13:00</span></div>
+    <div class="trabaja-con-nosotros_06"><span class="trabajaconnosotros_06_span">16:00</span></div>
   </div>
   <div data-property-1="Default" class="btn_trabaja_07">
     <div class="trabaja-con-nosotros_07"><span class="trabajaconnosotros_07_span">17:00</span></div>
@@ -75,12 +82,12 @@
     </div>
   </div>
 
-  <div class="experiencia">
+  <div class="experiencia" >
     <div class="titulo_experiencia">
       <span class="titulo_experiencia_span">Experiencia</span>
     </div>
     <div class="experiencia_contenido">
-      <span class="experiencia_span">{{ psicologo.descripcion }}</span>
+      <span class="experiencia_span">{{ psicologo.descripcion || 'Sin descripción disponible.' }}</span>
     </div>
   </div>
   
