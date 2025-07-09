@@ -18,10 +18,9 @@
           </div>
         </div>
 
-        <!-- inputs adaptados a Reactive Forms sin cambiar diseño -->
         <input
           type="text"
-          formControlName="usernameOrEmail"
+          formControlName="email"
           placeholder="Correo electrónico"
           class="input"
           required
@@ -40,6 +39,20 @@
         </button>
       </div>
 
+      <!-- Botón Google debajo de Acceder -->
+      <div class="google-container">
+        <button type="button" class="btn-google" (click)="loginWithGoogle()">
+          <img
+            src="https://developers.google.com/identity/images/g-logo.png"
+            alt="Google"
+            width="20"
+            height="20"
+            style="margin-right: 8px"
+          />
+          Iniciar sesión con Google
+        </button>
+      </div>
+
       <img class="logo-secundario" src="assets/logoSecundario.png" />
 
       <div class="group-5">
@@ -51,4 +64,3 @@
     <img class="img" src="assets/imgLogin.png" />
   </div>
 </form>
-
