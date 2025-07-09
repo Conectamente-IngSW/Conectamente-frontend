@@ -34,6 +34,8 @@ export class AuthService {
     );
   }
 
+
+
   logout(): void {
     this.storageService.clearAuthData();
     this.userSubject.next(null);
