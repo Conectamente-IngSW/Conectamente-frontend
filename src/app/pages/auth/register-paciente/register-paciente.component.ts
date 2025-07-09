@@ -68,7 +68,7 @@ export class RegisterPacienteComponent {
           this.snackBar.open('Paciente registrado!', 'Cerrar', { duration: 2000 });
           this.router.navigate(['/registro/paciente']);
         },
-        error: err => {
+        error: (err: any) => {
           this.snackBar.open(err.error?.message || 'Error al registrar.', 'Cerrar', { duration: 3000 });
         }
       });

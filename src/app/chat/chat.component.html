@@ -1,0 +1,25 @@
+<div class="chats">
+  <!-- Sidebar dinámico -->
+  <aside class="sidebar">
+    <ul>
+      <li *ngFor="let conv of conversations"
+          (click)="selectConversation(conv)"
+          [class.active]="conv === selectedConversation">
+        <div class="sender">{{ conv.senderName }}</div>
+        <div class="last-message">{{ conv.lastMessage }}</div>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Ventana de chat -->
+  <section class="chat-window" *ngIf="selectedConversation">
+    <div class="messages">
+      <app-message *ngFor="let msg of messages" [message]="msg"></app-message>
+    </div>
+    
+    <div class="chat-input">
+      <input [(ngModel)]="newMessage" placeholder="Escribe un mensaje..." />
+      <button (click)="send()">ENVIAR</button>
+    </div>
+  </section>
+</div>

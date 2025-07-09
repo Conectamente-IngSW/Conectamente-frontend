@@ -31,15 +31,18 @@ export class RegisterPsicologoComponent {
       apellidos: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       dni: ['', Validators.required],
+      edad: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+      especialidad: ['', Validators.required],
       numColegiatura: ['', Validators.required],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required]
-    });
+    }, { validators: this.passwordsMatch });
   }
 
   passwordsMatch(frm: FormGroup) {
-    return frm.get('password')?.value === frm.get('confirmPassword')?.value 
-      ? null : { notMatching: true };
+    const password = frm.get('password')?.value;
+    const confirmPassword = frm.get('confirmPassword')?.value;
+    return password === confirmPassword ? null : { notMatching: true };
   }
 
   controlHasError(c: string, err: string) {
@@ -47,39 +50,38 @@ export class RegisterPsicologoComponent {
   }
 
   onSubmit(): void {
-  if (this.registerForm.invalid) {
-    this.snackBar.open('Corrige los errores antes de continuar.', 'Cerrar', {
-      duration: 2000,
-      verticalPosition: 'top'
-    });
-    return;
-  }
-
-    if (this.registerForm.value.password !== this.registerForm.value.confirmPassword) {
-      this.snackBar.open('Las contraseñas no coinciden.', 'Cerrar', { duration: 2000 });
+    if (this.registerForm.invalid) {
+      this.snackBar.open('Corrige los errores antes de continuar.', 'Cerrar', {
+        duration: 2000,
+        verticalPosition: 'top'
+      });
       return;
     }
+
     const req: RegisterPsicologoRequest = {
       nombre: this.registerForm.value.nombres,
       apellido: this.registerForm.value.apellidos,
       email: this.registerForm.value.email,
       dni: this.registerForm.value.dni,
+
+      edad: parseInt(this.registerForm.value.edad),
+
       especialidad: this.registerForm.value.especialidad,
       numColegiatura: this.registerForm.value.numColegiatura,
       password: this.registerForm.value.password
     };
 
     this.authService.registerPsicologo(req)
-          .subscribe({
-            next: (res: RegisterPsicologoResponse) => {
-              this.snackBar.open('Psicologo registrado!', 'Cerrar', { duration: 2000 });
-              this.router.navigate(['/registro/psicologo']);
-            },
-            error: err => {
-              this.snackBar.open(err.error?.message || 'Error al registrar.', 'Cerrar', { duration: 3000 });
-            }
-          });
-      }
+      .subscribe({
+        next: (res: RegisterPsicologoResponse) => {
+          this.snackBar.open('Psicologo registrado!', 'Cerrar', { duration: 2000 });
+          this.router.navigate(['/registro/psicologo']);
+        },
+        error: (err: any) => {
+          this.snackBar.open(err.error?.message || 'Error al registrar.', 'Cerrar', { duration: 3000 });
+        }
+      });
+  }
 
   private showSnackBar(message: string): void {
     this.snackBar.open(message, 'Cerrar', { duration: 3000 });

@@ -1,0 +1,67 @@
+<div class="body_vista_pacientes">
+  <img class="fondo_vista_paciente" src="assets/fondo_vista_paciente.png" />
+
+  
+  <div class="filtro-busqueda-nombre">
+    <mat-form-field appearance="fill" class="campo-filtro">
+    <mat-label>Buscar por nombre o apellido</mat-label>
+    <input matInput [(ngModel)]="filtroNombre" placeholder="Ej. Carla" />
+    </mat-form-field>
+    <button mat-raised-button class="btn_buscar" (click)="filtrarPsicologos()">Buscar</button>
+</div>
+
+  <mat-form-field appearance="fill" class="filtro_especialidad">
+  <mat-label>Especialidad</mat-label>
+  <mat-select [(ngModel)]="filtroEspecialidad" (selectionChange)="filtrarPsicologos()">
+    <mat-option [value]="null">Ninguno</mat-option>
+    <mat-option *ngFor="let e of especialidades" [value]="e.value">{{ e.label }}</mat-option>
+  </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="filtro_departamento">
+  <mat-label>Departamento</mat-label>
+  <mat-select [(ngModel)]="filtroDepartamento" (selectionChange)="filtrarPsicologos()">
+    <mat-option [value]="null">Ninguno</mat-option>
+    <mat-option *ngFor="let d of departamentos" [value]="d.value">{{ d.label }}</mat-option>
+  </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="filtro_precio">
+  <mat-label>Precio</mat-label>
+  <mat-select [(ngModel)]="filtroPrecio" (selectionChange)="filtrarPsicologos()">
+    <mat-option [value]="null">Ninguno</mat-option>
+    <mat-option *ngFor="let r of rangosPrecio" [value]="r.value">{{ r.label }}</mat-option>
+  </mat-select>
+  </mat-form-field>
+ 
+  <!--<div class="rectangle"></div> fondo-->
+  <div class="page-content">
+  <div class="resultados"><span class="resultados_span">Resultados</span></div>
+  <div class="psicologo-grid">
+  <div class="psicologo-card" *ngFor="let p of psicologos" (click)="verPerfil(p.id)">
+    <div class="nombre">{{ p.nombre }} {{ p.apellido }}</div>
+    <div class="especialidad">Psicología {{ p.especialidad }}</div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Location.png" alt="Ubicación">
+      <div class="direccion">{{ p.direccion }}</div>
+    </div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Department.png" alt="Modalidad">
+      <div class="modalidad">{{ p.modalidad }}</div>
+    </div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Cash.png" alt="Precio">
+      <div class="precio">Precio desde S/ {{ p.tarifa }}</div>
+    </div>
+
+    <div class="fila-dato">
+      <img class="icon" src="assets/Clock.png" alt="Horario">
+      <div class="horario">{{ p.disponibilidad }}</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

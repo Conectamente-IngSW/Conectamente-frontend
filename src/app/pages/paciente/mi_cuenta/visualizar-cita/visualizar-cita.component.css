@@ -1,0 +1,464 @@
+.micuenta_span {
+  color: #2F327D;
+  font-size: 54px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.mi-cuenta {
+  left: 119px;
+  top: 63px;
+  position: absolute;
+  text-align: center;
+}
+
+.rectangle-187 {
+  width: 1084px;
+  height: 738px;
+  left: -7px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 40px;
+}
+
+.miscitas_span {
+  color: black;
+  font-size: 36px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.mis-citas {
+  width: 769px;
+  height: 72px;
+  left: 44px;
+  top: 58px;
+  position: absolute;
+}
+
+.psiclogo_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.psiclogo {
+  width: 232px;
+  height: 36px;
+  left: 23px;
+  top: 12px;
+  position: absolute;
+}
+
+.carlatorresmedina_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.carla-torres-medina {
+  width: 281px;
+  height: 36px;
+  left: 23px;
+  top: 42px;
+  position: absolute;
+}
+
+.horadecita_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.hora-de-cita {
+  width: 138.70px;
+  height: 36px;
+  left: 714px;
+  top: 12px;
+  position: absolute;
+}
+
+.f040am_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.text-1040-am {
+  width: 168px;
+  height: 36px;
+  left: 714px;
+  top: 42px;
+  position: absolute;
+}
+
+.fechadecita_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.fecha-de-cita {
+  width: 141.18px;
+  height: 36px;
+  left: 423px;
+  top: 12px;
+  position: absolute;
+}
+
+.f0052025_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.text-20052025 {
+  width: 171px;
+  height: 36px;
+  left: 423px;
+  top: 42px;
+  position: absolute;
+}
+
+.virtual_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.virtual {
+  width: 232px;
+  height: 36px;
+  left: 23px;
+  top: 130px;
+  position: absolute;
+}
+
+.modalidad_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.modalidad {
+  width: 232px;
+  height: 36px;
+  left: 23px;
+  top: 94px;
+  position: absolute;
+}
+
+.psiclogo_01_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.psiclogo_01 {
+  width: 232px;
+  height: 36px;
+  left: 23px;
+  top: 12px;
+  position: absolute;
+}
+
+.carlatorresmedina_01_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.carla-torres-medina_01 {
+  width: 281px;
+  height: 36px;
+  left: 23px;
+  top: 42px;
+  position: absolute;
+}
+
+.fechadecita_01_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.fecha-de-cita_01 {
+  width: 141.18px;
+  height: 36px;
+  left: 423px;
+  top: 12px;
+  position: absolute;
+}
+
+.f0052025_01_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.text-20052025_01 {
+  width: 171px;
+  height: 36px;
+  left: 423px;
+  top: 42px;
+  position: absolute;
+}
+
+.horadecita_01_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.hora-de-cita_01 {
+  width: 138.70px;
+  height: 36px;
+  left: 714px;
+  top: 12px;
+  position: absolute;
+}
+
+.f040am_01_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.text-1040-am_01 {
+  width: 168px;
+  height: 36px;
+  left: 714px;
+  top: 42px;
+  position: absolute;
+}
+
+.presencial_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.presencial {
+  width: 232px;
+  height: 36px;
+  left: 23px;
+  top: 130px;
+  position: absolute;
+}
+
+.modalidad_01_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.modalidad_01 {
+  width: 232px;
+  height: 36px;
+  left: 23px;
+  top: 94px;
+  position: absolute;
+}
+
+.direccin_span {
+  color: #979797;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.direccin {
+  width: 232px;
+  height: 36px;
+  left: 380px;
+  top: 93px;
+  position: absolute;
+}
+
+.avbenavides1034miraflores_span {
+  color: black;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.av-benavides-1034-miraflores {
+  width: 321px;
+  height: 36px;
+  left: 380px;
+  top: 129px;
+  position: absolute;
+}
+
+.rectangle-186 {
+  width: 447px;
+  height: 373px;
+  left: 2px;
+  top: 4px;
+  position: absolute;
+  background: white;
+  border-radius: 40px;
+}
+
+.miscitas_01_span {
+  color: #2D36FF;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.mis-citas_01 {
+  width: 232px;
+  height: 36px;
+  left: 54px;
+  top: 245px;
+  position: absolute;
+}
+
+.line-44 {
+  width: 346px;
+  height: 0px;
+  left: 53px;
+  top: 199px;
+  position: absolute;
+  outline: 1px rgba(0, 0, 0, 0.50) solid;
+  outline-offset: -0.50px;
+}
+
+.configuracindelacuenta_01_span {
+  color: #171718;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.configuracin-de-la-cuenta_01 {
+  width: 225px;
+  height: 85px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.frame-427318907 {
+  width: 972px;
+  height: 83px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #E2F0FF;
+  overflow: hidden;
+  outline: 1px #989393 solid;
+  outline-offset: -1px;
+}
+
+.frame-427318907_01 {
+  width: 972px;
+  height: 83px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #E2F0FF;
+  overflow: hidden;
+  outline: 1px #989393 solid;
+  outline-offset: -1px;
+}
+
+.configuracin-de-la-cuenta {
+  width: 225px;
+  height: 85px;
+  left: 53px;
+  top: 86px;
+  position: absolute;
+}
+
+.frame-427318910 {
+  width: 972px;
+  height: 187px;
+  left: 49px;
+  top: 167px;
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  border-radius: 12px;
+  outline: 1px #989393 solid;
+  outline-offset: -1px;
+}
+
+.frame-427318911 {
+  width: 972px;
+  height: 187px;
+  left: 49px;
+  top: 391px;
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  border-radius: 12px;
+  outline: 1px #989393 solid;
+  outline-offset: -1px;
+}
+
+.frame-126 {
+  width: 449px;
+  height: 377px;
+  left: 119px;
+  top: 182px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.frame-125 {
+  width: 1085px;
+  height: 836px;
+  left: 642px;
+  top: 182px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.frame-427318915 {
+  width: 1920px;
+  height: 1030px;
+  position: relative;
+  background: #EBF5FF;
+  overflow: hidden;
+}

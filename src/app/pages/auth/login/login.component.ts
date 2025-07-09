@@ -51,9 +51,9 @@ export class LoginComponent {
     const credentials: AuthRequest = this.loginForm.value;
 
     this.authService.login(credentials).subscribe({
-      next: () => {
+      next: (response) => {
         this.showSnackBar('Inicio de sesión exitoso');
-        this.router.navigate(['/login']); // Ajusta esta ruta si es diferente
+        this.navigateBasedOnRole(response.rol);
       },
       error: () => {
         this.showSnackBar('Error al iniciar sesión. Verifica tus datos.');
@@ -62,17 +62,34 @@ export class LoginComponent {
   }
 
   loginWithGoogle(): void {
-  this.authService.googleLoginAndRegisterIfNeeded().subscribe({
-    next: () => {
-      this.showSnackBar('Sesión iniciada con Google');
-      this.router.navigate(['/visualizar-psicologo']);
-    },
-    error: (error) => {
-      console.error('Error con Google login', error);
-      this.showSnackBar('Error al iniciar sesión con Google');
+    this.authService.googleLoginAndRegisterIfNeeded().subscribe({
+      next: (response) => {
+        this.showSnackBar('Sesión iniciada con Google');
+        this.navigateBasedOnRole(response.rol);
+      },
+      error: (error) => {
+        console.error('Error con Google login', error);
+        this.showSnackBar('Error al iniciar sesión con Google');
+      }
+    });
+  }
+
+  private navigateBasedOnRole(role: string): void {
+    switch (role) {
+      case 'PACIENTE':
+        this.router.navigate(['/paciente/pantalla_principal/visualizar-psicologo']);
+        break;
+      case 'PSICOLOGO':
+        this.router.navigate(['/psicologo/mi_cuenta/configuracion']);
+        break;
+      case 'ADMIN':
+        this.router.navigate(['/admin']);
+        break;
+      default:
+        this.router.navigate(['/paciente/pantalla_principal/visualizar-psicologo']);
+        break;
     }
-  });
-}
+  }
 
   private showSnackBar(message: string): void {
     this.snackBar.open(message, 'Cerrar', {
