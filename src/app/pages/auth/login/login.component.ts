@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AuthService } from '../../../core/services/auth.service';
 import { AuthRequest } from '../../../shared/model/auth-request.model';
 
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -33,7 +34,7 @@ export class LoginComponent {
 
   constructor() {
     this.loginForm = this.fb.group({
-      usernameOrEmail: ['', [Validators.required]],  // ← Cambiado a usernameOrEmail si tu backend lo requiere así
+      email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
     });
   }
@@ -52,13 +53,26 @@ export class LoginComponent {
     this.authService.login(credentials).subscribe({
       next: () => {
         this.showSnackBar('Inicio de sesión exitoso');
-        this.router.navigate(['/developers']); // Ajusta esta ruta si es diferente
+        this.router.navigate(['/login']); // Ajusta esta ruta si es diferente
       },
       error: () => {
         this.showSnackBar('Error al iniciar sesión. Verifica tus datos.');
       }
     });
   }
+
+  loginWithGoogle(): void {
+  this.authService.googleLoginAndRegisterIfNeeded().subscribe({
+    next: () => {
+      this.showSnackBar('Sesión iniciada con Google');
+      this.router.navigate(['/visualizar-psicologo']);
+    },
+    error: (error) => {
+      console.error('Error con Google login', error);
+      this.showSnackBar('Error al iniciar sesión con Google');
+    }
+  });
+}
 
   private showSnackBar(message: string): void {
     this.snackBar.open(message, 'Cerrar', {
@@ -67,4 +81,5 @@ export class LoginComponent {
     });
   }
 }
+
 

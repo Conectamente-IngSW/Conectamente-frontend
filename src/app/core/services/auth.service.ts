@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment.development';
-import { Observable, tap } from 'rxjs';
+import { Observable, of, switchMap, tap } from 'rxjs';
 import { AuthRequest } from '../../shared/model/auth-request.model';
 import { AuthResponse } from '../../shared/model/auth-response.model';
 import { RegisterPacienteRequest } from '../../shared/model/register-paciente-request.model';
@@ -10,6 +10,11 @@ import { RegisterPsicologoRequest } from '../../shared/model/register-psicologo-
 import { RegisterPsicologoResponse } from '../../shared/model/register-psicologo-response.model';
 import { StorageService } from './storage.service';
 
+// Firebase
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import { FirebaseApp, initializeApp } from 'firebase/app';
+import { firebaseConfig } from '../../../environments/firebase-config';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,6 +22,9 @@ export class AuthService {
   private baseURL = `${environment.baseURL}/auth`;
   private http = inject(HttpClient);
   private storageService = inject(StorageService);
+
+  private firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
+  private firebaseAuth = getAuth(this.firebaseApp);
 
   login(authRequest: AuthRequest): Observable<AuthResponse> {
     return this.http.post<AuthResponse>(`${this.baseURL}/login`, authRequest).pipe(
@@ -34,6 +42,7 @@ export class AuthService {
 
   logout(): void {
     this.storageService.clearAuthData();
+    this.firebaseAuth.signOut();
   }
 
   isAuthenticated(): boolean {
@@ -47,5 +56,54 @@ export class AuthService {
   getUserRole(): string | null {
     const authData = this.storageService.getAuthData();
     return authData ? authData.rol : null;
+  }
+
+  /**
+   * Inicia sesión con Google y registra automáticamente como paciente si no existe
+   */
+  googleLoginAndRegisterIfNeeded(): Observable<AuthResponse> {
+    const provider = new GoogleAuthProvider();
+    return new Observable<AuthResponse>((observer) => {
+      signInWithPopup(this.firebaseAuth, provider)
+        .then(result => {
+          const email = result.user.email || '';
+          const name = result.user.displayName || '';
+          const [nombre, apellido = ''] = name.split(' ');
+
+          const registerData: RegisterPacienteRequest = {
+            nombre,
+            apellido,
+            email,
+            password: result.user.uid,
+            dni: '',
+          };
+
+          this.registerPaciente(registerData).pipe(
+            switchMap(() => this.login({ email: email, password: result.user.uid }))
+          ).subscribe({
+            next: (res) => {
+              this.storageService.setAuthData(res);
+              observer.next(res);
+              observer.complete();
+            },
+            error: (err) => {
+              if (err.status === 400 || err.status === 409) {
+                // Ya registrado, solo login
+                this.login({ email: email, password: result.user.uid }).subscribe({
+                  next: (res) => {
+                    this.storageService.setAuthData(res);
+                    observer.next(res);
+                    observer.complete();
+                  },
+                  error: loginErr => observer.error(loginErr)
+                });
+              } else {
+                observer.error(err);
+              }
+            }
+          });
+        })
+        .catch(error => observer.error(error));
+    });
   }
 }
