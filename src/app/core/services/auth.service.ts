@@ -65,11 +65,11 @@ export class AuthService {
   }
 
   registerPaciente(request: RegisterPacienteRequest): Observable<RegisterPacienteResponse> {
-    return this.http.post<RegisterPacienteResponse>(`${this.baseURL}/register/paciente`, request);
+    return this.http.post<RegisterPacienteResponse>(`${this.baseURL}/registro/paciente`, request);
   }
 
   registerPsicologo(request: RegisterPsicologoRequest): Observable<RegisterPsicologoResponse> {
-    return this.http.post<RegisterPsicologoResponse>(`${this.baseURL}/register/psicologo`, request);
+    return this.http.post<RegisterPsicologoResponse>(`${this.baseURL}/registro/psicologo`, request);
   }
 
   /**

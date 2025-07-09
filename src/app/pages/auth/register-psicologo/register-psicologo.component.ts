@@ -31,8 +31,6 @@ export class RegisterPsicologoComponent {
       apellidos: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       dni: ['', Validators.required],
-      edad: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
-      especialidad: ['', Validators.required],
       numColegiatura: ['', Validators.required],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required]
@@ -63,9 +61,6 @@ export class RegisterPsicologoComponent {
       apellido: this.registerForm.value.apellidos,
       email: this.registerForm.value.email,
       dni: this.registerForm.value.dni,
-
-      edad: parseInt(this.registerForm.value.edad),
-
       especialidad: this.registerForm.value.especialidad,
       numColegiatura: this.registerForm.value.numColegiatura,
       password: this.registerForm.value.password
@@ -75,7 +70,7 @@ export class RegisterPsicologoComponent {
       .subscribe({
         next: (res: RegisterPsicologoResponse) => {
           this.snackBar.open('Psicologo registrado!', 'Cerrar', { duration: 2000 });
-          this.router.navigate(['/registro/psicologo']);
+          this.router.navigate(['/psicologo/mi_cuenta']);
         },
         error: (err: any) => {
           this.snackBar.open(err.error?.message || 'Error al registrar.', 'Cerrar', { duration: 3000 });

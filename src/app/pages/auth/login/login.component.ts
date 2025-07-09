@@ -45,6 +45,7 @@ export class LoginComponent {
 
   onSubmit(): void {
     if (this.loginForm.invalid) {
+      this.showSnackBar('Por favor, completa todos los campos correctamente.');
       return;
     }
 
@@ -55,7 +56,8 @@ export class LoginComponent {
         this.showSnackBar('Inicio de sesión exitoso');
         this.navigateBasedOnRole(response.rol);
       },
-      error: () => {
+      error: (error) => {
+        console.error('Login error:', error);
         this.showSnackBar('Error al iniciar sesión. Verifica tus datos.');
       }
     });
@@ -64,12 +66,12 @@ export class LoginComponent {
   loginWithGoogle(): void {
     this.authService.googleLoginAndRegisterIfNeeded().subscribe({
       next: (response) => {
-        this.showSnackBar('Sesión iniciada con Google');
+        this.showSnackBar('Sesión iniciada con Google exitosamente');
         this.navigateBasedOnRole(response.rol);
       },
       error: (error) => {
         console.error('Error con Google login', error);
-        this.showSnackBar('Error al iniciar sesión con Google');
+        this.showSnackBar('Error al iniciar sesión con Google. Inténtalo de nuevo.');
       }
     });
   }
@@ -80,10 +82,11 @@ export class LoginComponent {
         this.router.navigate(['/paciente/pantalla_principal/visualizar-psicologo']);
         break;
       case 'PSICOLOGO':
-        this.router.navigate(['/psicologo/mi_cuenta/configuracion']);
+        this.router.navigate(['/psicologo/mi_cuenta']);
         break;
       case 'ADMIN':
-        this.router.navigate(['/admin']);
+        // For now, redirect admin to paciente view since admin module is not implemented
+        this.router.navigate(['/paciente/pantalla_principal/visualizar-psicologo']);
         break;
       default:
         this.router.navigate(['/paciente/pantalla_principal/visualizar-psicologo']);
