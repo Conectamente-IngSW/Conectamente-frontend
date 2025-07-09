@@ -1,8 +1,8 @@
 
 
 <!--Desde aquí se controla lo que se muestra en pantalla-->
-<app-navbar ></app-navbar>
-<app-navbar-landing></app-navbar-landing>
-<router-outlet><router-outlet/>
+<app-navbar *ngIf="shouldShowMainNavbar()"></app-navbar>
+<app-navbar-landing *ngIf="shouldShowLandingNavbar()"></app-navbar-landing>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
 
