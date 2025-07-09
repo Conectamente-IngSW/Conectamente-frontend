@@ -1,15 +1,34 @@
 <div class="landing_header">
-  <img class="logoprimario" src="assets\logoPrimario.png" routerLink="landing/principal"/>
-  <div class="frame-427318918"></div>
-  <div class="menu"><span class="menu_span" routerLink="landing/principal">Menu</span></div>
-  <div class="precios"><span class="precios_span" routerLink="landing/precios">Precios</span></div>
-  <div class="nosotros"><span class="nosotros_span" routerLink="landing/nosotros">Nosotros</span></div>
-  <div class="login_button" routerLink="auth/login">
-    <div class="login"><span class="login_span">Login</span></div>
+  <img class="logoprimario" src="assets\logoPrimario.png" routerLink="/"/>
+  
+  <!-- Mobile menu toggle -->
+  <div class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-  <div class="signup_button" routerLink="auth/register">
-    <div class="sign-up"><span class="signup_span">Sign Up</span></div>
+  
+  <!-- Desktop navigation -->
+  <div class="desktop-nav">
+    <div class="menu"><span class="menu_span" routerLink="landing/principal">Menu</span></div>
+    <div class="precios"><span class="precios_span" routerLink="landing/precios">Precios</span></div>
+    <div class="nosotros"><span class="nosotros_span" routerLink="landing/nosotros">Nosotros</span></div>
   </div>
-  <div class="rectangle-3348"></div>
-  <div class="frame-427318926"></div>
+  
+  <!-- Mobile navigation -->
+  <div class="mobile-menu" [class.active]="isMobileMenuOpen">
+    <div class="menu"><span class="menu_span" routerLink="landing/principal">Menu</span></div>
+    <div class="precios"><span class="precios_span" routerLink="landing/precios">Precios</span></div>
+    <div class="nosotros"><span class="nosotros_span" routerLink="landing/nosotros">Nosotros</span></div>
+  </div>
+  
+  <!-- Button container -->
+  <div class="button-container">
+    <div class="login_button" routerLink="auth/login">
+      <div class="login"><span class="login_span">Login</span></div>
+    </div>
+    <div class="signup_button" routerLink="auth/register">
+      <div class="sign-up"><span class="signup_span">Sign Up</span></div>
+    </div>
+  </div>
 </div>

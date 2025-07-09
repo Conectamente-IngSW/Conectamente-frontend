@@ -20,11 +20,26 @@ export const routes: Routes = [
     ]
   },
 
+  // REGISTRO MODULE (for direct navigation from select-register)
+  {
+    path: 'registro',
+    children: [
+      { path: 'paciente',  component: RegisterPacienteComponent },
+      { path: 'psicologo', component: RegisterPsicologoComponent },
+    ]
+  },
+
   // PACIENTE MODULE
   {
     path: 'paciente',
     loadChildren: () =>
       import('./pages/paciente/paciente.routes').then(m => m.pacienteRoutes)
+  },
+
+  // PSICOLOGO MODULE
+  {
+    path: 'psicologo',
+    loadChildren: () => import('./psicologo/psicologo.routes').then(m => m.psicologoRoutes)
   },
 
   // LANDING MODULE

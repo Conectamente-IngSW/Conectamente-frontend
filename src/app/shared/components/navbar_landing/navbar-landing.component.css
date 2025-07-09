@@ -1,8 +1,25 @@
 
 
-.logoprimario {
-  left: 102px;
+.landing_header {
+  width: 100%;
+  height: 200px;
   position: relative;
+  background: #49BBBD;
+}
+
+.logoprimario {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logoprimario:hover {
+  transform: translateY(-50%) scale(1.02);
 }
 
 .frame-427318918 {
@@ -20,6 +37,12 @@
   font-weight: 700;
   letter-spacing: 0.44px;
   word-wrap: break-word;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu_span:hover {
+  color: #f0f0f0;
 }
 
 .menu {
@@ -28,6 +51,16 @@
   left: 825px;
   top: 101.07px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .precios_span {
@@ -37,6 +70,12 @@
   font-weight: 700;
   letter-spacing: 0.44px;
   word-wrap: break-word;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.precios_span:hover {
+  color: #f0f0f0;
 }
 
 .precios {
@@ -45,6 +84,16 @@
   left: 1038px;
   top: 102.07px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.precios:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nosotros_span {
@@ -54,6 +103,12 @@
   font-weight: 700;
   letter-spacing: 0.44px;
   word-wrap: break-word;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nosotros_span:hover {
+  color: #f0f0f0;
 }
 
 .nosotros {
@@ -62,6 +117,16 @@
   left: 1227px;
   top: 99px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.nosotros:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .login_span {
@@ -77,6 +142,9 @@
   left: 49px;
   top: 14px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .signup_span {
@@ -92,6 +160,9 @@
   left: 36px;
   top: 14px;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rectangle-3348 {
@@ -113,30 +184,247 @@
 .login_button {
   width: 160px;
   height: 60px;
-  left: 1446px;
+  right: 200px;
   top: 86px;
   position: absolute;
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   border-radius: 80px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .signup_button {
   width: 160px;
   height: 60px;
-  left: 1660px;
+  right: 20px;
   top: 86px;
   position: absolute;
   background: #7ECCCD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   border-radius: 80px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.landing_header {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  background: #49BBBD;
+.signup_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+/* Mobile navigation */
+.mobile-menu {
+  display: none;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive Design - Only for mobile */
+@media (max-width: 767px) {
+  .landing_header {
+    height: auto;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-md);
+  }
+  
+  .logoprimario {
+    width: 120px;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    order: 1;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    order: 2;
+  }
+  
+  .menu,
+  .precios,
+  .nosotros {
+    display: none;
+  }
+  
+  .menu.active,
+  .precios.active,
+  .nosotros.active {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: var(--spacing-sm);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: var(--spacing-xs) 0;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  
+  .login_button,
+  .signup_button {
+    width: 140px;
+    height: 50px;
+    margin: var(--spacing-xs);
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  
+  .login_span,
+  .signup_span {
+    font-size: var(--font-size-base);
+  }
+  
+  /* Mobile menu container */
+  .mobile-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    order: 3;
+  }
+  
+  .mobile-menu.active {
+    display: flex;
+  }
+  
+  /* Button container for mobile */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    order: 4;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  .mobile-menu.active {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  .desktop-nav {
+    display: flex;
+  }
+  
+  .menu,
+  .precios,
+  .nosotros {
+    position: absolute;
+  }
+  
+  .menu {
+    left: 825px;
+    top: 101.07px;
+  }
+  
+  .precios {
+    left: 1038px;
+    top: 102.07px;
+  }
+  
+  .nosotros {
+    left: 1227px;
+    top: 99px;
+  }
+  
+  .login_button {
+    right: 200px;
+    top: 86px;
+  }
+  
+  .signup_button {
+    right: 20px;
+    top: 86px;
+  }
+}
+
+/* Animation for mobile menu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu.active {
+  animation: slideDown 0.3s ease-out;
 }

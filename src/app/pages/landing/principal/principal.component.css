@@ -171,9 +171,10 @@
 }
 
 .qu-es-conectamente {
-  left: 739px;
+  left: 50%;
   top: 1056px;
   position: absolute;
+  transform: translateX(-50%);
 }
 
 .conectamenteesunaplataformadigitalquefacilitaelencuentroentrepersonasquebuscanapoyopsicolgicoyprofesionalescertificadosquedeseanofrecersusserviciosdemaneraindependiente_span {
@@ -187,9 +188,10 @@
 
 .conectamente-es-una-plataforma-digital-que-facilita-el-encuentro-entre-personas-que-buscan-apoyo-psicolgico-y-profesionales-certificados-que-desean-ofrecer-sus-servicios-de-manera-independiente {
   width: 837px;
-  left: 541px;
+  left: 50%;
   top: 1130px;
   position: absolute;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -353,9 +355,10 @@
 }
 
 .testimonios {
-  left: 818px;
+  left: 50%;
   top: 3614px;
   position: absolute;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -708,9 +711,10 @@
 }
 
 .funcionalidades {
-  left: 773px;
+  left: 50%;
   top: 77px;
   position: absolute;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -1252,21 +1256,25 @@
 }
 
 .funcionalidades_01 {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 1553px;
-  left: 0px;
+  left: 50%;
   top: 1983px;
   position: absolute;
+  transform: translateX(-50%);
   background: #EBF5FF;
   overflow: hidden;
 }
 
 .frame-427318920 {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 953px;
-  position: absolute;
+  position: relative;
   background: #49BBBD;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .frame-427318925 {
@@ -1279,19 +1287,24 @@
 }
 
 .servicio {
-  width: 1917px;
+  width: 100%;
+  max-width: 1917px;
   height: 788px;
-  left: 0px;
+  left: 50%;
   top: 4561px;
   position: absolute;
+  transform: translateX(-50%);
   background: #EBF5FF;
   overflow: hidden;
 }
 
 .frame-427318927 {
-  width: 1920px;
-  height: 5357px;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-height: 5357px;
   position: relative;
   background: white;
   overflow: hidden;
+  margin: 0 auto;
 }

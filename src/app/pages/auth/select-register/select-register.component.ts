@@ -13,7 +13,7 @@ export class SelectRegisterComponent {
   constructor(private router: Router) {}
 
   navigateTo(tipo: string) {
-    this.router.navigate([`/register/${tipo}`]);
+    this.router.navigate([`/registro/${tipo}`]);
   }
 }
 

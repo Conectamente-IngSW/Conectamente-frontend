@@ -11,28 +11,19 @@ import { RegisterPsicologoResponse } from '../../shared/model/register-psicologo
 import { StorageService } from './storage.service';
 import { BehaviorSubject } from 'rxjs';
 
-
-// Firebase
-import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
-import { FirebaseApp, initializeApp } from 'firebase/app';
-import { firebaseConfig } from '../../../environments/firebase-config';
-
+// Angular Fire imports
+import { Auth, GoogleAuthProvider, signInWithPopup, UserCredential } from '@angular/fire/auth';
 
 @Injectable({ providedIn: 'root' })
-
 export class AuthService {
   private baseURL = `${environment.baseURL}/auth`;
   private http = inject(HttpClient);
   private storageService = inject(StorageService);
-
-
-  private firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
-  private firebaseAuth = getAuth(this.firebaseApp);
+  private auth = inject(Auth);
 
   // OPTIONAL: a BehaviorSubject to drive reactive templates/guards
   private userSubject = new BehaviorSubject<AuthResponse| null>(this.storageService.getAuthData());
   user$ = this.userSubject.asObservable();
-
 
   login(authRequest: AuthRequest): Observable<AuthResponse> {
     return this.http.post<AuthResponse>(`${this.baseURL}/login`, authRequest).pipe(
@@ -46,6 +37,7 @@ export class AuthService {
   logout(): void {
     this.storageService.clearAuthData();
     this.userSubject.next(null);
+    this.auth.signOut();
   }
 
   // raw getter
@@ -53,15 +45,9 @@ export class AuthService {
     return this.storageService.getAuthData();
   }
 
-
-  logout(): void {
-    this.storageService.clearAuthData();
-    this.firebaseAuth.signOut();
-  }
   // simple boolean checks
   isAuthenticated(): boolean {
     return !!this.getAuthData();
-
   }
 
   getUserRole(): string | null {
@@ -90,8 +76,8 @@ export class AuthService {
   googleLoginAndRegisterIfNeeded(): Observable<AuthResponse> {
     const provider = new GoogleAuthProvider();
     return new Observable<AuthResponse>((observer) => {
-      signInWithPopup(this.firebaseAuth, provider)
-        .then(result => {
+      signInWithPopup(this.auth, provider)
+        .then((result: UserCredential) => {
           const email = result.user.email || '';
           const name = result.user.displayName || '';
           const [nombre, apellido = ''] = name.split(' ');
@@ -121,7 +107,7 @@ export class AuthService {
                     observer.next(res);
                     observer.complete();
                   },
-                  error: loginErr => observer.error(loginErr)
+                  error: (loginErr: any) => observer.error(loginErr)
                 });
               } else {
                 observer.error(err);
@@ -129,7 +115,7 @@ export class AuthService {
             }
           });
         })
-        .catch(error => observer.error(error));
+        .catch((error: any) => observer.error(error));
     });
   }
 }

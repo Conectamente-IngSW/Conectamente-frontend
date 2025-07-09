@@ -9,5 +9,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar-landing.component.css'
 })
 export class NavbarLandingComponent {
+  isMobileMenuOpen = false;
 
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
 }
