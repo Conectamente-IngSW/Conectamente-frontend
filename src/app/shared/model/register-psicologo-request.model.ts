@@ -3,7 +3,6 @@ export interface RegisterPsicologoRequest {
     apellido: string;
     email: string;
     dni: string;
-    edad: number;
     especialidad: string;
     numColegiatura: string;
     password: string;
