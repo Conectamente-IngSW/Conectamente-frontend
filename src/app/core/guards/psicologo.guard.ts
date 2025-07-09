@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-import { AuthService } from '../auth.service';  // adjust path if needed
+import { AuthService } from '../services/auth.service';  // adjust path if needed
 
 @Injectable({ providedIn: 'root' })
 export class PsicologoGuard implements CanActivate {
