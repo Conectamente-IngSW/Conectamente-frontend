@@ -10,11 +10,13 @@
   width: 957px;
   height: 385px;
   left: 820px;
-  top: 1694px;
+  top: 1450px;
   position: absolute;
   opacity: 0.20;
   background: #9DCCFF;
   border-radius: 30px;
+  z-index: -2;
+
 }
 
 .trabajaconnosotros_span {
@@ -189,7 +191,7 @@
   width: 957px;
   height: 385px;
   left: 820px;
-  top: 2107px;
+  top: 1870px;
   position: absolute;
   opacity: 0.20;
   background: #9DCCFF;
@@ -208,7 +210,7 @@
 .certificados {
   width: 329px;
   left: 906px;
-  top: 2133px;
+  top: 1900px;
   position: absolute;
   text-align: center;
 }
@@ -225,7 +227,7 @@
 .agenda-tu-cita {
   width: 392px;
   left: 906px;
-  top: 1718px;
+  top: 1470px;
   position: absolute;
   text-align: center;
 }
@@ -394,7 +396,7 @@
   text-align: center;
 }
 
-.psicoterapeutainfantil_span {
+.especialidad_span {
   color: black;
   font-size: 36px;
   font-family: Poppins;
@@ -402,13 +404,13 @@
   word-wrap: break-word;
 }
 
-.psicoterapeuta-infantil {
+.especialidad {
   left: 137px;
   top: 268px;
   position: absolute;
 }
 
-.nmerodecolegiadorne16645cmp98362_span {
+.num_colegiado_span {
   color: black;
   font-size: 36px;
   font-family: Poppins;
@@ -416,13 +418,13 @@
   word-wrap: break-word;
 }
 
-.nmero-de-colegiado-rne-16645-cmp-98362 {
+.num_colegiado {
   left: 137px;
   top: 347px;
   position: absolute;
 }
 
-.dracarlatorresmedina_span {
+.nombre_psicologo_span {
   color: black;
   font-size: 54px;
   font-family: Poppins;
@@ -430,7 +432,7 @@
   word-wrap: break-word;
 }
 
-.dra-carla-torres-medina {
+.nombre_psicologo {
   left: 129px;
   top: 151px;
   position: absolute;
@@ -492,20 +494,35 @@
   text-align: center;
 }
 
-.holasoypsicoterapeutainfantilydesdehacemsde10aosacompaoaniosyfamiliaseneldescubrimientoyfortalecimientodesumundoemocionalalolargodemicarrerahetenidoelprivilegiodetrabajarenclnicasprivadascentrosdedesarrolloinfantilycolegiosdondehepodidobrindarapoyotantoencontextosclnicoscomoeducativosmitrabajosecentraenayudaralosniosaexpresarloquemuchasvecesnopuedenponerenpalabrassusmiedossusenojossuspreguntasutilizoeljuegocomoprincipalherramientateraputicacombinandotcnicasdeintervencinemocionalconunenfoquerespetuosoempticoybasadoenlaevidenciacreofirmementequecadanionecesitasentirseseguroycomprendidoparapoderavanzaryesoesloquebuscoconstruirencadasesintambinacompaoamadrespadresycuidadoresbrindndolesestrategiasclarasparacomprendermejorelcomportamientodesushijosyfortalecerelvnculofamiliarsquecriarnoesfcilyporesomegustatrabajarenequipoconlasfamiliasdesdelacercanasinjuiciosyconmuchaescuchameespecializoencasosdeansiedadinfantilcambiosdeconductaprocesosdeduelodificultadesdeadaptacinescolaryorientacinencrianzaactualmenteatiendodemanerapresencialenconsultaprivadaytambinofrezcosesionesvirtualessiestsbuscandounespaciodondetuhijoohijapuedaserescuchadoyacompaadoconcalidezyprofesionalismoestarencantadadecaminareseprocesocontigo_span {
+.experiencia_span {
   color: black;
-  font-size: 24px;
+  font-size: 30px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
+  line-height: 50px;
   word-wrap: break-word;
 }
 
-.hola-soy-psicoterapeuta-infantil-y-desde-hace-ms-de-10-aos-acompao-a-nios-y-familias-en-el-descubrimiento-y-fortalecimiento-de-su-mundo-emocional-a-lo-largo-de-mi-carrera-he-tenido-el-privilegio-de-trabajar-en-clnicas-privadas-centros-de-desarrollo-infantil-y-colegios-donde-he-podido-brindar-apoyo-tanto-en-contextos-clnicos-como-educativos-mi-trabajo-se-centra-en-ayudar-a-los-nios-a-expresar-lo-que-muchas-veces-no-pueden-poner-en-palabras-sus-miedos-sus-enojos-sus-preguntas-utilizo-el-juego-como-principal-herramienta-teraputica-combinando-tcnicas-de-intervencin-emocional-con-un-enfoque-respetuoso-emptico-y-basado-en-la-evidencia-creo-firmemente-que-cada-nio-necesita-sentirse-seguro-y-comprendido-para-poder-avanzar-y-eso-es-lo-que-busco-construir-en-cada-sesin-tambin-acompao-a-madres-padres-y-cuidadores-brindndoles-estrategias-claras-para-comprender-mejor-el-comportamiento-de-sus-hijos-y-fortalecer-el-vnculo-familiar-s-que-criar-no-es-fcil-y-por-eso-me-gusta-trabajar-en-equipo-con-las-familias-desde-la-cercana-sin-juicios-y-con-mucha-escucha-me-especializo-en-casos-de-ansiedad-infantil-cambios-de-conducta-procesos-de-duelo-dificultades-de-adaptacin-escolar-y-orientacin-en-crianza-actualmente-atiendo-de-manera-presencial-en-consulta-privada-y-tambin-ofrezco-sesiones-virtuales-si-ests-buscando-un-espacio-donde-tu-hijo-o-hija-pueda-ser-escuchado-y-acompaado-con-calidez-y-profesionalismo-estar-encantada-de-caminar-ese-proceso-contigo {
+.experiencia_contenido {
   width: 1382px;
-  height: 648px;
-  left: 127px;
-  top: 156px;
+  margin: 0 auto ;
+  margin-top: 150px;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.experiencia {
+  width: 1637px;
+  min-height: 300px;
+  left: 140px;
+  top: 768px;
   position: absolute;
+  background: #EBF5FF;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px 80px 60px;
 }
 
 .rectangle_02 {
@@ -514,8 +531,7 @@
   left: 0px;
   top: 2px;
   position: absolute;
-  opacity: 0.20;
-  background: #9DCCFF;
+  background: #EBF5FF;
   border-radius: 30px;
 }
 
@@ -553,10 +569,10 @@
 
 .avbenavides1034miraflores_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
   word-wrap: break-word;
+  font-weight: 100;
 }
 
 .av-benavides-1034-miraflores {
@@ -569,9 +585,9 @@
 
 .consultorioprivadoysesionesonline_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
   word-wrap: break-word;
 }
 
@@ -585,9 +601,9 @@
 
 .terapiaindividualyansiedad_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
   word-wrap: break-word;
 }
 
@@ -599,15 +615,41 @@
   position: absolute;
 }
 
-.precioporconsultaconsultaindividualpresencials120consultaindividualvirtualzooms100terapiadeparejas160terapiafamiliars180_span {
+.atencinlunesaviernes9am7pm_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
   word-wrap: break-word;
 }
 
-.precio-por-consulta-consulta-individual-presencial-s-120-consulta-individual-virtual-zoom-s-100-terapia-de-pareja-s-160-terapia-familiar-s-180 {
+.atencin-lunes-a-viernes-9-a-m-7-p-m {
+  width: 331px;
+  height: 39.97px;
+  left: 130px;
+  top: 414.86px;
+  position: absolute;
+}
+
+.consultorio_01 {
+  width: 611px;
+  height: 803px;
+  left: 143px;
+  top: 1450px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.precioporconsultaconsultaindividualpresencials120consultaindividualvirtualzooms100terapiadeparejas160terapiafamiliars180_span {
+  color: black;
+  font-size: 25px;
+  font-family: Poppins;
+  font-weight: 100;
+  word-wrap: break-word;
+}
+
+.precio-por-consulta {
   width: 402px;
   height: 227.85px;
   left: 130px;
@@ -639,27 +681,11 @@
   position: absolute;
 }
 
-.atencinlunesaviernes9am7pm_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m {
-  width: 331px;
-  height: 39.97px;
-  left: 130px;
-  top: 414.86px;
-  position: absolute;
-}
-
 .btn_trabaja {
   width: 142px;
   height: 57px;
   left: 933px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -671,7 +697,7 @@
   width: 142px;
   height: 57px;
   left: 933px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -683,7 +709,7 @@
   width: 142px;
   height: 57px;
   left: 1325px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -695,7 +721,7 @@
   width: 142px;
   height: 57px;
   left: 1325px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -707,7 +733,7 @@
   width: 142px;
   height: 57px;
   left: 1129px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -719,7 +745,7 @@
   width: 142px;
   height: 57px;
   left: 1129px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -731,7 +757,7 @@
   width: 142px;
   height: 57px;
   left: 1521px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -743,7 +769,7 @@
   width: 142px;
   height: 57px;
   left: 1521px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -775,15 +801,6 @@
   border-radius: 36px;
 }
 
-.experiencia {
-  width: 1637px;
-  height: 871px;
-  left: 140px;
-  top: 768px;
-  position: absolute;
-  background: #EBF5FF;
-  overflow: hidden;
-}
 
 .comentario_1 {
   width: 1500px;
@@ -803,14 +820,7 @@
   overflow: hidden;
 }
 
-.consultorio_01 {
-  width: 611px;
-  height: 803px;
-  left: 143px;
-  top: 1692px;
-  position: absolute;
-  overflow: hidden;
-}
+
 
 .cabecera {
   width: 1920px;
@@ -826,7 +836,7 @@
   width: 1634px;
   height: 850px;
   left: 143px;
-  top: 2550px;
+  top: 2350px;
   position: absolute;
   background: #EBF5FF;
   overflow: hidden;
