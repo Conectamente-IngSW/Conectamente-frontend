@@ -25,11 +25,9 @@
               "src/assets"
             ],
             "styles": [
-
               "src/custom-theme.scss",
-
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "@angular/material/prebuilt-themes/magenta-violet.css",
-
               "src/styles.css"
             ],
             "scripts": []
@@ -104,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "d8893b8b-69d2-4a08-9bad-75a28312c3e0"
+    "analytics": false
   }
 }

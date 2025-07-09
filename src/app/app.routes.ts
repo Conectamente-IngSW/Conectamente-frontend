@@ -4,16 +4,18 @@ import { RegisterPacienteComponent } from './pages/auth/register-paciente/regist
 import { RegisterPsicologoComponent } from './pages/auth/register-psicologo/register-psicologo.component';
 
 export const routes: Routes = [
-  // AUTH MODULE (could also live in its own auth.routes.ts)
+  // AUTH MODULE
   {
     path: 'auth',
     children: [
-      { path: '', redirectTo: 'login', pathMatch: 'full' },
-      { path: 'login', loadComponent: () =>
+      { path: '',     redirectTo: 'login', pathMatch: 'full' },
+      {
+        path: 'login',
+        loadComponent: () =>
           import('./pages/auth/login/login.component').then(m => m.LoginComponent)
       },
-      { path: 'register', component: SelectRegisterComponent },
-      { path: 'register/paciente', component: RegisterPacienteComponent },
+      { path: 'register',           component: SelectRegisterComponent },
+      { path: 'register/paciente',  component: RegisterPacienteComponent },
       { path: 'register/psicologo', component: RegisterPsicologoComponent },
     ]
   },
@@ -33,7 +35,7 @@ export const routes: Routes = [
   },
 
   // Default redirect when someone hits '/'
-  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: '',  redirectTo: 'auth', pathMatch: 'full' },
 
   // Wildcard route for 404 / unknown paths
   { path: '**', redirectTo: 'auth' }

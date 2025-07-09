@@ -9,43 +9,59 @@ import { RegisterPacienteResponse } from '../../shared/model/register-paciente-r
 import { RegisterPsicologoRequest } from '../../shared/model/register-psicologo-request.model';
 import { RegisterPsicologoResponse } from '../../shared/model/register-psicologo-response.model';
 import { StorageService } from './storage.service';
+import { BehaviorSubject } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class AuthService {
   private baseURL = `${environment.baseURL}/auth`;
   private http = inject(HttpClient);
   private storageService = inject(StorageService);
 
+  // OPTIONAL: a BehaviorSubject to drive reactive templates/guards
+  private userSubject = new BehaviorSubject<AuthResponse| null>(this.storageService.getAuthData());
+  user$ = this.userSubject.asObservable();
+
   login(authRequest: AuthRequest): Observable<AuthResponse> {
     return this.http.post<AuthResponse>(`${this.baseURL}/login`, authRequest).pipe(
-      tap(response => this.storageService.setAuthData(response))
+      tap(response => {
+        this.storageService.setAuthData(response);
+        this.userSubject.next(response);
+      })
     );
-  }
-
-  registerPaciente(data: RegisterPacienteRequest): Observable<RegisterPacienteResponse> {
-    return this.http.post<RegisterPacienteResponse>(`${this.baseURL}/registro/paciente`, data);
-  }
-
-  registerPsicologo(data: RegisterPsicologoRequest): Observable<RegisterPsicologoResponse> {
-    return this.http.post<RegisterPsicologoResponse>(`${this.baseURL}/registro/psicologo`, data);
   }
 
   logout(): void {
     this.storageService.clearAuthData();
+    this.userSubject.next(null);
   }
 
-  isAuthenticated(): boolean {
-    return this.storageService.getAuthData() !== null;
-  }
-
-  getUser(): AuthResponse | null {
+  // raw getter
+  getAuthData(): AuthResponse | null {
     return this.storageService.getAuthData();
   }
 
+  // simple boolean checks
+  isAuthenticated(): boolean {
+    return !!this.getAuthData();
+  }
+
   getUserRole(): string | null {
-    const authData = this.storageService.getAuthData();
-    return authData ? authData.rol : null;
+    return this.getAuthData()?.rol ?? null;
+  }
+
+  isPsicologo(): boolean {
+    return this.getUserRole() === 'PSICOLOGO';
+  }
+
+  isPaciente(): boolean {
+    return this.getUserRole() === 'PACIENTE';
+  }
+
+  registerPaciente(request: RegisterPacienteRequest): Observable<RegisterPacienteResponse> {
+    return this.http.post<RegisterPacienteResponse>(`${this.baseURL}/register/paciente`, request);
+  }
+
+  registerPsicologo(request: RegisterPsicologoRequest): Observable<RegisterPsicologoResponse> {
+    return this.http.post<RegisterPsicologoResponse>(`${this.baseURL}/register/psicologo`, request);
   }
 }

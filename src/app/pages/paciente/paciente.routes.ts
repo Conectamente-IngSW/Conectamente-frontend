@@ -11,7 +11,8 @@ export const pacienteRoutes: Routes = [
       { path: 'mi_cuenta/configuracion', component: ConfiguracionComponent },
       { path: 'mi_cuenta/visualizar-cita', component: VisualizarCitaComponent },
       {path: 'pantalla_principal/visualizar-psicologo', component: VisualizarPsicologoComponent},
-      {path: 'perfil_psicologo/perfil', component: PerfilComponent}    
+      {path: 'perfil_psicologo/perfil', component: PerfilComponent},  
+      { path: '', redirectTo: 'mi_cuenta/configuracion', pathMatch: 'full' }  
     ]
   }
 ];
