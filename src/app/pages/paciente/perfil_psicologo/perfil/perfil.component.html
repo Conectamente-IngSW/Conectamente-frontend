@@ -4,7 +4,7 @@
   <div class="certificados"><span class="certificados_span">Certificados</span></div>
   
   
-
+<div class="Citas">
   <div class="image-18"></div>
   <mat-card class="demo-inline-calendar-card">
   <mat-calendar [(selected)]="selected"></mat-calendar>
@@ -14,29 +14,34 @@
   <div class="rectangle"></div>
   <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
   <div data-property-1="Default" class="btn_trabaja">
-    <div class="trabaja-con-nosotros"><span class="trabajaconnosotros_span">10:00</span></div>
+    <div class="trabaja-con-nosotros" (click)="onTimeClick('10:00')"><span class="trabajaconnosotros_span">10:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_01">
+  <div data-property-1="Default" class="btn_trabaja_01" (click)="onTimeClick('11:00')">
     <div class="trabaja-con-nosotros_01"><span class="trabajaconnosotros_01_span">11:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_02">
+  <div data-property-1="Default" class="btn_trabaja_02" (click)="onTimeClick('12:00')">
     <div class="trabaja-con-nosotros_02"><span class="trabajaconnosotros_02_span">12:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_03">
+  <div data-property-1="Default" class="btn_trabaja_03" (click)="onTimeClick('13:00')">
     <div class="trabaja-con-nosotros_03"><span class="trabajaconnosotros_03_span">13:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_04">
+  <div data-property-1="Default" class="btn_trabaja_04" (click)="onTimeClick('14:00')">
     <div class="trabaja-con-nosotros_04"><span class="trabajaconnosotros_04_span">14:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_05">
+  <div data-property-1="Default" class="btn_trabaja_05" (click)="onTimeClick('15:00')">
     <div class="trabaja-con-nosotros_05"><span class="trabajaconnosotros_05_span">15:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_06">
+  <div data-property-1="Default" class="btn_trabaja_06" (click)="onTimeClick('16:00')">
     <div class="trabaja-con-nosotros_06"><span class="trabajaconnosotros_06_span">16:00</span></div>
   </div>
-  <div data-property-1="Default" class="btn_trabaja_07">
+  <div data-property-1="Default" class="btn_trabaja_07" (click)="onTimeClick('17:00')">
     <div class="trabaja-con-nosotros_07"><span class="trabajaconnosotros_07_span">17:00</span></div>
   </div>
+  <div data-property-1="Default" class="guardar">
+    <div class="btn_guardar"><span class="guardar_span">Guardar</span></div>
+  </div>
+  <p class="texto-resumen">{{ resumenSeleccion }}</p>
+</div>
 
   <div class="frame-427318913">
     <div class="comentario_1">
