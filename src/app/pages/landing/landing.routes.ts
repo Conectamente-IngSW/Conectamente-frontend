@@ -16,3 +16,4 @@ export const landingRoutes: Routes = [
     ]
   }
 ];
+
