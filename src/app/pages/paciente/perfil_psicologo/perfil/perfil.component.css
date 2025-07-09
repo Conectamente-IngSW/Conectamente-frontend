@@ -10,11 +10,13 @@
   width: 957px;
   height: 385px;
   left: 820px;
-  top: 1694px;
+  top: 1450px;
   position: absolute;
   opacity: 0.20;
   background: #9DCCFF;
   border-radius: 30px;
+  z-index: -2;
+
 }
 
 .trabajaconnosotros_span {
@@ -189,7 +191,7 @@
   width: 957px;
   height: 385px;
   left: 820px;
-  top: 2107px;
+  top: 1870px;
   position: absolute;
   opacity: 0.20;
   background: #9DCCFF;
@@ -208,7 +210,7 @@
 .certificados {
   width: 329px;
   left: 906px;
-  top: 2133px;
+  top: 1900px;
   position: absolute;
   text-align: center;
 }
@@ -225,7 +227,7 @@
 .agenda-tu-cita {
   width: 392px;
   left: 906px;
-  top: 1718px;
+  top: 1470px;
   position: absolute;
   text-align: center;
 }
@@ -494,18 +496,33 @@
 
 .experiencia_span {
   color: black;
-  font-size: 24px;
+  font-size: 30px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
+  line-height: 50px;
   word-wrap: break-word;
 }
 
 .experiencia_contenido {
   width: 1382px;
-  height: 648px;
-  left: 127px;
-  top: 156px;
+  margin: 0 auto ;
+  margin-top: 150px;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.experiencia {
+  width: 1637px;
+  min-height: 300px;
+  left: 140px;
+  top: 768px;
   position: absolute;
+  background: #EBF5FF;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px 80px 60px;
 }
 
 .rectangle_02 {
@@ -552,10 +569,10 @@
 
 .avbenavides1034miraflores_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
   word-wrap: break-word;
+  font-weight: 100;
 }
 
 .av-benavides-1034-miraflores {
@@ -568,9 +585,9 @@
 
 .consultorioprivadoysesionesonline_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
   word-wrap: break-word;
 }
 
@@ -584,9 +601,9 @@
 
 .terapiaindividualyansiedad_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
   word-wrap: break-word;
 }
 
@@ -598,11 +615,37 @@
   position: absolute;
 }
 
+.atencinlunesaviernes9am7pm_span {
+  color: black;
+  font-size: 25px;
+  font-family: Poppins;
+  font-weight: 100;
+  word-wrap: break-word;
+}
+
+.atencin-lunes-a-viernes-9-a-m-7-p-m {
+  width: 331px;
+  height: 39.97px;
+  left: 130px;
+  top: 414.86px;
+  position: absolute;
+}
+
+.consultorio_01 {
+  width: 611px;
+  height: 803px;
+  left: 143px;
+  top: 1450px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .precioporconsultaconsultaindividualpresencials120consultaindividualvirtualzooms100terapiadeparejas160terapiafamiliars180_span {
   color: black;
-  font-size: 16px;
+  font-size: 25px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 100;
   word-wrap: break-word;
 }
 
@@ -638,27 +681,11 @@
   position: absolute;
 }
 
-.atencinlunesaviernes9am7pm_span {
-  color: black;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.atencin-lunes-a-viernes-9-a-m-7-p-m {
-  width: 331px;
-  height: 39.97px;
-  left: 130px;
-  top: 414.86px;
-  position: absolute;
-}
-
 .btn_trabaja {
   width: 142px;
   height: 57px;
   left: 933px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -670,7 +697,7 @@
   width: 142px;
   height: 57px;
   left: 933px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -682,7 +709,7 @@
   width: 142px;
   height: 57px;
   left: 1325px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -694,7 +721,7 @@
   width: 142px;
   height: 57px;
   left: 1325px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -706,7 +733,7 @@
   width: 142px;
   height: 57px;
   left: 1129px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -718,7 +745,7 @@
   width: 142px;
   height: 57px;
   left: 1129px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -730,7 +757,7 @@
   width: 142px;
   height: 57px;
   left: 1521px;
-  top: 1820px;
+  top: 1600px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -742,7 +769,7 @@
   width: 142px;
   height: 57px;
   left: 1521px;
-  top: 1926px;
+  top: 1700px;
   position: absolute;
   background: #49BBBD;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -774,15 +801,6 @@
   border-radius: 36px;
 }
 
-.experiencia {
-  width: 1637px;
-  height: 871px;
-  left: 140px;
-  top: 768px;
-  position: relative;
-  background: #EBF5FF;
-  overflow: hidden;
-}
 
 .comentario_1 {
   width: 1500px;
@@ -802,14 +820,7 @@
   overflow: hidden;
 }
 
-.consultorio_01 {
-  width: 611px;
-  height: 803px;
-  left: 143px;
-  top: 1692px;
-  position: absolute;
-  overflow: hidden;
-}
+
 
 .cabecera {
   width: 1920px;
@@ -825,7 +836,7 @@
   width: 1634px;
   height: 850px;
   left: 143px;
-  top: 2550px;
+  top: 2350px;
   position: absolute;
   background: #EBF5FF;
   overflow: hidden;
