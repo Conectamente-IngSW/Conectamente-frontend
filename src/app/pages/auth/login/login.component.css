@@ -2,13 +2,12 @@
   background-color: #fffefc;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   width: 100%;
 }
 
 .login .div {
   background-color: #fffefc;
-  width: 1440px;
+  width: 100%;
   height: 900px;
   position: relative;
 }

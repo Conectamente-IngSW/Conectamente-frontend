@@ -1,0 +1,131 @@
+<div class="body">
+  
+  <div class="rectangle_01"></div>
+  <div class="certificados"><span class="certificados_span">Certificados</span></div>
+  
+  <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
+  <div class="image-18"></div>
+  <div class="rectangle"></div>
+  <div data-property-1="Default" class="btn_trabaja">
+    <div class="trabaja-con-nosotros"><span class="trabajaconnosotros_span">10:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_01">
+    <div class="trabaja-con-nosotros_01"><span class="trabajaconnosotros_01_span">14:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_02">
+    <div class="trabaja-con-nosotros_02"><span class="trabajaconnosotros_02_span">12:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_03">
+    <div class="trabaja-con-nosotros_03"><span class="trabajaconnosotros_03_span">16:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_04">
+    <div class="trabaja-con-nosotros_04"><span class="trabajaconnosotros_04_span">11:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_05">
+    <div class="trabaja-con-nosotros_05"><span class="trabajaconnosotros_05_span">15:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_06">
+    <div class="trabaja-con-nosotros_06"><span class="trabajaconnosotros_06_span">13:00</span></div>
+  </div>
+  <div data-property-1="Default" class="btn_trabaja_07">
+    <div class="trabaja-con-nosotros_07"><span class="trabajaconnosotros_07_span">17:00</span></div>
+  </div>
+
+  <div class="frame-427318913">
+    <div class="comentario_1">
+      <div class="llegu-a-consulta-con-ansiedad-constante-y-dificultades-para-dormir-desde-la-primera-sesin-con-el-dr-javier-ramrez-sent-un-espacio-seguro-y-de-escucha-genuina-su-enfoque-me-ayud-a-entender-lo-que-estaba-sintiendo-y-a-trabajar-en-herramientas-prcticas-para-manejar-mis-emociones-hoy-me-siento-mucho-ms-tranquila-y-en-control-recomiendo-totalmente-su-acompaamiento-especialmente-si-ests-buscando-un-psiclogo-emptico-y-profesional"><span class="lleguaconsultaconansiedadconstanteydificultadesparadormirdesdelaprimerasesinconeldrjavierramrezsentunespacioseguroydeescuchagenuinasuenfoquemeayudaentenderloqueestabasintiendoyatrabajarenherramientasprcticasparamanejarmisemocioneshoymesientomuchomstranquilayencontrolrecomiendototalmentesuacompaamientoespecialmentesiestsbuscandounpsiclogoempticoyprofesional_span">Llegué a consulta con ansiedad constante y dificultades para dormir. Desde la primera sesión con el Dr. Javier Ramírez sentí un espacio seguro y de escucha genuina. Su enfoque me ayudó a entender lo que estaba sintiendo y a trabajar en herramientas prácticas para manejar mis emociones. Hoy me siento mucho más tranquila y en control. Recomiendo totalmente su acompañamiento, especialmente si estás buscando un psicólogo empático y profesional</span></div>
+      <div class="lina"><span class="lina_span">Lina</span></div>
+      <img class="star" src="assets/Star.png" />
+      <img class="star_01" src="assets/Star.png" />
+      <img class="star_02" src="assets/Star.png" />
+      <img class="star_03" src="assets/Star.png" />
+      <img class="star_04" src="assets/Star.png" />
+    </div>
+    <div class="comentario_2">
+      <div class="tena-dudas-sobre-empezar-terapia-pero-trabajar-con-la-lic-andrea-soto-fue-una-de-las-mejores-decisiones-que-tom-este-ao-me-ayud-a-identificar-patrones-que-no-vea-y-a-establecer-lmites-en-mis-relaciones-personales-es-muy-clara-respetuosa-y-comprometida-cada-sesin-fue-una-oportunidad-para-avanzar-y-siempre-me-sent-escuchado-sin-ser-juzgado"><span class="tenadudassobreempezarterapiaperotrabajarconlalicandreasotofueunadelasmejoresdecisionesquetomesteaomeayudaidentificarpatronesquenoveayaestablecerlmitesenmisrelacionespersonalesesmuyclararespetuosaycomprometidacadasesinfueunaoportunidadparaavanzarysiempremesentescuchadosinserjuzgado_span">Tenía dudas sobre empezar terapia, pero trabajar con la Lic. Andrea Soto fue una de las mejores decisiones que tomé este año. Me ayudó a identificar patrones que no veía y a establecer límites en mis relaciones personales. Es muy clara, respetuosa y comprometida. Cada sesión fue una oportunidad para avanzar, y siempre me sentí escuchado sin ser juzgado.</span></div>
+      <div class="carlos"><span class="carlos_span">Carlos</span></div>
+      <img class="star_05" src="assets/Star.png" />
+      <img class="star_06" src="assets/Star.png" />
+      <img class="star_07" src="assets/Star.png" />
+      <img class="star_08" src="assets/Star.png" />
+      <img class="star_09" src="assets/Star.png" />
+    </div>
+    <div class="resea"><span class="resea_span">Reseña</span></div>
+  </div>
+
+  <div class="cabecera" *ngIf="psicologo">
+    <div class="especialidad">
+      <span class="especialidad_span">Especialista en psicología {{ psicologo.especialidad }}</span>
+    </div>
+    <div class="num_colegiado">
+      <span class="num_colegiado_span">Número de colegiado: {{ psicologo.numColegiatura }}</span>
+    </div>
+    <div class="nombre_psicologo">
+      <span class="nombre_psicologo_span">Dr. {{ psicologo.nombre }} {{ psicologo.apellido }}</span>
+    </div>
+    <div data-property-1="Default" class="btn_trabaja_08">
+      <div class="trabaja-con-nosotros_08">
+        <span class="trabajaconnosotros_08_span">Enviar Mensaje</span>
+      </div>
+    </div>
+    <div data-property-1="Default" class="btn_trabaja_09">
+      <div class="trabaja-con-nosotros_09">
+        <span class="trabajaconnosotros_09_span">Agendar Cita</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="experiencia">
+    <div class="titulo_experiencia">
+      <span class="titulo_experiencia_span">Experiencia</span>
+    </div>
+    <div class="experiencia_contenido">
+      <span class="experiencia_span">{{ psicologo.descripcion }}</span>
+    </div>
+  </div>
+  
+<div class="consultorio_01" *ngIf="psicologo">
+  <div class="rectangle_02">
+    <div class="consultorio">
+      <span class="consultorio_span">Consultorio</span>
+    </div>
+
+    <img class="location" src="assets/Location.png" />
+    <img class="department" src="assets/Department.png" />
+
+    <!-- Dirección del psicólogo -->
+    <div class="av-benavides-1034-miraflores">
+      <span class="avbenavides1034miraflores_span">{{ psicologo.direccion }}</span>
+    </div>
+    <!-- Modalidad (por ejemplo, privado y online) -->
+    <div class="consultorio-privado-y-sesiones-online">
+      <span class="consultorioprivadoysesionesonline_span">
+        {{ psicologo.modalidad }}
+      </span>
+    </div>
+    <!-- Especialidades -->
+    <div class="terapia-individual-y-ansiedad">
+      <span class="terapiaindividualyansiedad_span">
+        {{ psicologo.especialidad }}
+      </span>
+    </div>
+    <!-- Precios -->
+    <div class="precio-por-consulta">
+      <span class="precioporconsultaconsultaindividualpresencials120consultaindividualvirtualzooms100terapiadeparejas160terapiafamiliars180_span">
+        Precio por consulta desde S/{{ psicologo.tarifa }}
+      </span>
+    </div>
+    <img class="literature" src="assets/Literature.png" />
+    <img class="cash" src="assets/Cash.png" />
+    <img class="clock" src="assets/Clock.png" />
+    <!-- Horario de atención -->
+    <div class="atencin-lunes-a-viernes-9-a-m-7-p-m">
+      <span class="atencinlunesaviernes9am7pm_span">
+        Atención: {{ psicologo.disponibilidad }}
+      </span>
+    </div>
+  </div>
+</div>
+</div>
+
+

@@ -76,7 +76,7 @@ export class RegisterPsicologoComponent {
               this.snackBar.open('Psicologo registrado!', 'Cerrar', { duration: 2000 });
               this.router.navigate(['/registro/psicologo']);
             },
-            error: err => {
+            error: (err: any) => {
               this.snackBar.open(err.error?.message || 'Error al registrar.', 'Cerrar', { duration: 3000 });
             }
           });

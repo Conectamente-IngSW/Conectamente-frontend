@@ -1,0 +1,603 @@
+.ellipse-2 {
+  width: 20px;
+  height: 19.98px;
+  left: 1758px;
+  top: 381.44px;
+  position: absolute;
+  background: #C4C4C4;
+  border-radius: 9999px;
+}
+
+.ellipse-3 {
+  width: 20px;
+  height: 19.98px;
+  left: 1758px;
+  top: 381.44px;
+  position: absolute;
+  background: #4EE381;
+  border-radius: 9999px;
+}
+
+.vector-4 {
+  width: 9px;
+  height: 6.99px;
+  left: 1764px;
+  top: 388.43px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+}
+
+.foto_landing-1 {
+  width: 863.29px;
+  height: 933px;
+  left: 960px;
+  top: 20px;
+  position: absolute;
+}
+
+.planesyprecios_01_span {
+  color: white;
+  font-size: 54px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.planes-y-precios_01 {
+  left: 208px;
+  top: 244px;
+  position: absolute;
+}
+
+.conectamenteofreceunaexperienciatransparenteysinbarreraslospacientesaccedendeformagratuitaylosprofesionalessolopaganunapequeacomisinporcadaconsultarealizadaastodosgananmsaccesomsoportunidadesmsbienestar_span {
+  color: white;
+  font-size: 24px;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.conectamente-ofrece-una-experiencia-transparente-y-sin-barreras-los-pacientes-acceden-de-forma-gratuita-y-los-profesionales-solo-pagan-una-pequea-comisin-por-cada-consulta-realizada-as-todos-ganan-ms-acceso-ms-oportunidades-ms-bienestar {
+  width: 523px;
+  height: 128px;
+  left: 211px;
+  top: 349px;
+  position: absolute;
+}
+
+.rectangle {
+  width: 1928px;
+  height: 1030px;
+  left: -8px;
+  top: 953px;
+  position: absolute;
+  opacity: 0.20;
+  background: #9DCCFF;
+}
+
+.suscripciones_span {
+  color: #2F327D;
+  font-size: 44px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 79.20px;
+  word-wrap: break-word;
+}
+
+.suscripciones {
+  left: 802px;
+  top: 86px;
+  position: absolute;
+  text-align: center;
+}
+
+.bg {
+  width: 500px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+}
+
+.freeforever_span {
+  color: #2D3436;
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 56px;
+  word-wrap: break-word;
+}
+
+.free-forever {
+  width: 414px;
+  left: 0px;
+  top: 48px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.likeapussy_span {
+  color: #49BBBD;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.20px;
+  word-wrap: break-word;
+}
+
+.like-a-pussy {
+  width: 324px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.components-drivensystem_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.components-driven-system {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 128px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-boostinglandingpages_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.sales-boosting-landing-pages {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 184px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.awesomefeathericonspack_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.awesome-feather-icons-pack {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 240px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.guardartuhistorialdecitasypagos_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.guardar-tu-historial-de-citas-y-pagos {
+  width: 366px;
+  height: 40px;
+  left: 91px;
+  top: 328px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.calificarydejarreseas_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.calificar-y-dejar-reseas {
+  width: 366px;
+  height: 40px;
+  left: 90px;
+  top: 380px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.check-mark {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 160px;
+  position: absolute;
+}
+
+.check-mark_01 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 216px;
+  position: absolute;
+}
+
+.check-mark_02 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 272px;
+  position: absolute;
+}
+
+.check-mark_03 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 328px;
+  position: absolute;
+}
+
+.check-mark_04 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 380px;
+  position: absolute;
+}
+
+.icon-acrylic-1 {
+  width: 32px;
+  height: 32px;
+  left: 289px;
+  top: 428px;
+  position: absolute;
+}
+
+.bg_01 {
+  width: 500px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 16px;
+}
+
+.f4month_span_01 {
+  color: #2D3436;
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 56px;
+  word-wrap: break-word;
+}
+
+.f4month_span_02 {
+  color: #2D3436;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.50px;
+  word-wrap: break-word;
+}
+
+.text-24-month {
+  width: 414px;
+  left: 0px;
+  top: 48px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.individual_span {
+  color: #49BBBD;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.20px;
+  word-wrap: break-word;
+}
+
+.text--individual {
+  width: 324px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.components-drivensystem_01_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.components-driven-system_01 {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 128px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-boostinglandingpages_01_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.sales-boosting-landing-pages_01 {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 184px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.awesomefeathericonspack_01_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.awesome-feather-icons-pack_01 {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 240px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.themedinto3differentstyles_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.themed-into-3-different-styles {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 296px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.willhelptolearnfigma_span {
+  color: #2D3436;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.will-help-to-learn-figma {
+  width: 366px;
+  height: 40px;
+  left: 48px;
+  top: 352px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.check-mark_05 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 162px;
+  position: absolute;
+}
+
+.check-mark_06 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 218px;
+  position: absolute;
+}
+
+.check-mark_07 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 274px;
+  position: absolute;
+}
+
+.check-mark_08 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 330px;
+  position: absolute;
+}
+
+.check-mark_09 {
+  width: 40px;
+  height: 40px;
+  left: 43px;
+  top: 382px;
+  position: absolute;
+}
+
+.instance--background-99-dp {
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  backdrop-filter: blur(24px);
+}
+
+.instance--background-99-dp_01 {
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  backdrop-filter: blur(24px);
+}
+
+.plans-1_01 {
+  width: 413.51px;
+  height: 536px;
+  left: 43.24px;
+  top: 32px;
+  position: absolute;
+}
+
+.planes-y-precios {
+  width: 1920px;
+  height: 953px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #49BBBD;
+  overflow: hidden;
+}
+
+.instance--background-8-dp {
+  width: 500px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.instance--background-16-dp {
+  width: 500px;
+  height: 600px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+.icon-acrylic {
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 188px;
+  position: absolute;
+}
+
+.icon-acrylic_01 {
+  width: 32px;
+  height: 32px;
+  left: 43px;
+  top: 332px;
+  position: absolute;
+}
+
+.plan_01 {
+  width: 500px;
+  height: 600px;
+  left: 1068px;
+  top: 276px;
+  position: absolute;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.plans-1 {
+  width: 413.51px;
+  height: 536px;
+  left: 43.24px;
+  top: 32px;
+  position: absolute;
+}
+
+.plan {
+  width: 500px;
+  height: 600px;
+  left: 352px;
+  top: 276px;
+  position: absolute;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.suscripciones_01 {
+  width: 1920px;
+  height: 998px;
+  left: 0px;
+  top: 969px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.frame-427318928 {
+  width: 1920px;
+  height: 1977px;
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
