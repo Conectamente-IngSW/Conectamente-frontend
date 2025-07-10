@@ -1,6 +1,6 @@
-import { provideHttpClient } from '@angular/common/http';
+import { provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 
 import { routes } from './app.routes';
@@ -17,7 +17,7 @@ export const appConfig: ApplicationConfig = {
     // provideForms(),
     // provideNgModel(),
     provideRouter(routes),
-
+    HttpClientModule,
     provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),
     provideHttpClient(withInterceptors([AuthInterceptor]))
   ]

@@ -1,35 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core'; 
+import { RouterModule, ActivatedRoute } from '@angular/router';
 import { PsicologoService, VisualizarPsicologoDTO } from '../../../../core/services/psicologo.service';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../../../core/services/auth.service';
-import { PacienteService, VisualizarPacienteDTO } from '../../../../core/services/paciente.service';
-
+import { PacienteService } from '../../../../core/services/paciente.service';
+import { CitaService, CrearCitaDTO } from '../../../../core/services/cita.service';
 
 // Angular Material
-import {ChangeDetectionStrategy, model} from '@angular/core';
-import {provideNativeDateAdapter} from '@angular/material/core';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
+import { ChangeDetectionStrategy } from '@angular/core';
+import { provideNativeDateAdapter } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-perfil',
   standalone: true,
-  imports: [RouterModule, 
+  imports: [
+    RouterModule, 
     CommonModule, 
     MatInputModule,
     MatFormFieldModule,
     MatDatepickerModule,
-    MatFormFieldModule, 
-    MatInputModule, 
-    MatDatepickerModule, 
-    MatIconModule, 
     MatIconModule,
-    MatCardModule],
+    MatCardModule
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [provideNativeDateAdapter()],
   templateUrl: './perfil.component.html',
@@ -38,80 +35,108 @@ import {MatCardModule} from '@angular/material/card';
 
 
 export class PerfilComponent implements OnInit {
-
-  cita = {
-  fechaCita: null as Date | null,
-  horaCita: null as string | null,
-  descripcion: 'Sesión de evaluación inicial',
-  idPaciente: null as number | null,
-  idPsicologo: null as number | null
-};
-
-
-  //calendario
-  selected = model<Date | null>(null);
-  selectedTime: string | null = null;
-
   psicologo!: VisualizarPsicologoDTO;
 
+  selected: Date = new Date(); // Fecha seleccionada del mat-calendar
+  selectedTime: string | null = null;
+
+  cita: CrearCitaDTO = {
+    fechaCita: '',     // Se seteará con this.selected
+    horaCita: '',      // Se seteará con onTimeClick
+    descripcion: 'Sesión de evaluación inicial',
+    idPaciente: 0,
+    idPsicologo: 0
+  };
+
   constructor(
-  private route: ActivatedRoute,
-  private psicologoService: PsicologoService,
-  private authService: AuthService,
-  private pacienteService: PacienteService
-) {}
+    private route: ActivatedRoute,
+    private psicologoService: PsicologoService,
+    private authService: AuthService,
+    private pacienteService: PacienteService,
+    private citaService: CitaService
+  ) {}
 
-ngOnInit(): void {
-  const id = this.route.snapshot.paramMap.get('id');
+  ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get('id');
 
-  // Obtener psicólogo por ID de ruta
-  if (id) {
-    this.psicologoService.getPsicologoPorId(+id).subscribe({
-      next: psicologo => {
-        this.psicologo = psicologo;
-        this.cita.idPsicologo = psicologo.id;
-      },
-      error: err => console.error('Error al obtener psicólogo:', err)
-    });
-  } else {
-    console.warn('ID de psicólogo no proporcionado en la ruta.');
+    // Obtener psicólogo por ID de ruta
+    if (id) {
+      this.psicologoService.getPsicologoPorId(+id).subscribe({
+        next: psicologo => {
+          this.psicologo = psicologo;
+          this.cita.idPsicologo = psicologo.id;
+        },
+        error: err => console.error('Error al obtener psicólogo:', err)
+      });
+    } else {
+      console.warn('ID de psicólogo no proporcionado en la ruta.');
+    }
+
+    // Obtener paciente por ID de usuario logueado
+    const authData = this.authService.getAuthData();
+    console.log('🧾 AuthData:', authData);
+    if (authData?.idUsuario) {
+      
+      this.pacienteService.getPacientePorUsuarioId(authData.idUsuario).subscribe({
+        next: paciente => {
+          console.log('✅ Paciente cargado:', paciente);
+          this.cita.idPaciente = paciente.id;
+        },
+        error: err => {
+          console.error('Error al obtener paciente:', err);
+        }
+      });
+    } else {
+      console.warn('No se pudo obtener el ID del usuario logueado.');
+    }
   }
 
-  // Obtener paciente asociado al usuario logueado
-  //const authData = this.authService.getAuthData();
-  //if (authData?.id) {
-  //  this.pacienteService.getPacientePorUsuarioId(authData.id).subscribe({
-  //    next: paciente => {
-  //      this.cita.idPaciente = paciente.id; // ✅ este sí es el ID correcto del paciente
-  //    },
-  //    error: err => {
-  //      console.error('Error al obtener paciente:', err);
-  //    }
-  //  });
- // } else {
- //   console.warn('No se pudo obtener el ID del usuario logueado.');
- // }
+  onTimeClick(hora: string) {
+    this.selectedTime = hora;
+    //this.cita.horaCita = hora;
+    this.cita.horaCita = hora.length === 5 ? `${hora}:00` : hora;
+    // Asegurarse de que la fecha esté actualizada también
+    this.cita.fechaCita = this.selected.toISOString().split('T')[0];
+  }
+
+  get resumenSeleccion(): string {
+    const fecha = this.selected;
+    const hora = this.selectedTime;
+    if (!fecha || !hora) return 'Selecciona una fecha y una hora';
+
+    const fechaFormateada = new Intl.DateTimeFormat('es-PE', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }).format(fecha);
+
+    return `Has seleccionado el ${fechaFormateada} a las ${hora}`;
+  }
+
+  get datosCargados(): boolean {
+  return this.cita.idPaciente > 0 && this.cita.idPsicologo > 0;
 }
 
 
+agendarCita() {
+  if (!this.cita.idPaciente || this.cita.idPaciente === 0) {
+    alert('⚠️ El ID del paciente aún no se ha cargado. Por favor, espera un momento e intenta nuevamente.');
+    return;
+  }
 
+  if (!this.cita.fechaCita || !this.cita.horaCita) {
+    alert('❗ Debes seleccionar una fecha y una hora.');
+    return;
+  }
 
-get resumenSeleccion(): string {
-  const fecha = this.selected();
-  const hora = this.selectedTime;
-  if (!fecha || !hora) return 'Selecciona una fecha y una hora';
+  console.log('📤 Payload que se envía:', JSON.stringify(this.cita, null, 2));
 
-  const fechaFormateada = new Intl.DateTimeFormat('es-PE', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }).format(fecha);
-
-  return `Has seleccionado el ${fechaFormateada} a las ${hora}`;
+  this.citaService.crearCita(this.cita).subscribe({
+    next: () => alert('✅ Cita agendada con éxito'),
+    error: err => console.error('❌ Error al agendar cita:', err)
+  });
 }
 
-onTimeClick(hora: string) {
-  this.selectedTime = hora;
-}
+
 }

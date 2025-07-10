@@ -14,7 +14,7 @@ export interface VisualizarPacienteDTO {
   providedIn: 'root'
 })
 export class PacienteService {
-  private baseUrl = 'http://localhost:8080/api/pacientes';
+  private baseUrl = 'http://localhost:8080/api/v1/paciente';
 
   constructor(private http: HttpClient) {}
 

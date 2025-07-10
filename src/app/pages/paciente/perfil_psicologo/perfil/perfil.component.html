@@ -9,7 +9,7 @@
   <mat-card class="demo-inline-calendar-card">
   <mat-calendar [(selected)]="selected"></mat-calendar>
 </mat-card>
-<p>Selected date: {{selected()}}</p>
+<p>Selected date: {{selected}}</p>
 
   <div class="rectangle"></div>
   <div class="agenda-tu-cita"><span class="agendatucita_span">Agenda tu Cita</span></div>
@@ -37,7 +37,7 @@
   <div data-property-1="Default" class="btn_trabaja_07" (click)="onTimeClick('17:00')">
     <div class="trabaja-con-nosotros_07"><span class="trabajaconnosotros_07_span">17:00</span></div>
   </div>
-  <div data-property-1="Default" class="guardar">
+  <div data-property-1="Default" class="guardar" (click)="agendarCita()">
     <div class="btn_guardar"><span class="guardar_span">Guardar</span></div>
   </div>
   <p class="texto-resumen">{{ resumenSeleccion }}</p>
@@ -91,12 +91,12 @@
     <div class="titulo_experiencia">
       <span class="titulo_experiencia_span">Experiencia</span>
     </div>
-    <div class="experiencia_contenido">
+    <div class="experiencia_contenido" *ngIf="psicologo">
       <span class="experiencia_span">{{ psicologo.descripcion || 'Sin descripción disponible.' }}</span>
     </div>
   </div>
   
-<div class="consultorio_01" *ngIf="psicologo">
+<div class="consultorio_01" >
   <div class="rectangle_02">
     <div class="consultorio">
       <span class="consultorio_span">Consultorio</span>
