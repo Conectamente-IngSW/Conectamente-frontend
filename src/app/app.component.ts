@@ -28,9 +28,9 @@ export class AppComponent {
 
   shouldShowMainNavbar(): boolean {
     const currentUrl = this.router.url;
-    // Show main navbar on authenticated user pages
-    return currentUrl.includes('/paciente') || 
-           currentUrl.includes('/psicologo') || 
+    // Show main navbar on authenticated user pages (but not on register pages)
+    return (currentUrl.includes('/paciente') && !currentUrl.includes('/registro')) || 
+           (currentUrl.includes('/psicologo') && !currentUrl.includes('/registro')) || 
            currentUrl.includes('/admin');
   }
 }
